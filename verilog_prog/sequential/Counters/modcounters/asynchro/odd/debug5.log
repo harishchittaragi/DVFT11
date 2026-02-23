@@ -1,0 +1,47 @@
+
+Error-[VERDI_VCS_MM] Possible VERDI_HOME and VCS_HOME mismatch
+  The Verdi tab and pli.a cannot be added to the 'vcs' compile command because
+  the file '/pli.a' could not be found.
+  Please check to make sure VERDI_HOME and VCS_HOME point to installations 
+  that are either both 32-bits or both 64-bits.
+
+Command: vcs -full64 -V -R -debug_access+all mod5_tb.v -l debug5.log
+/app/synopsys/installers/vcs/W-2024.09/linux64/bin/vcs1 -Mcc=gcc -Mcplusplus=g++ \
+-Masflags= -Mcfl= -pipe -fPIC -O -I/app/synopsys/installers/vcs/W-2024.09/include \
+-Mxllcflags= -Mxcflags= -pipe -fPIC -I/app/synopsys/installers/vcs/W-2024.09/include \
+-Mldflags= -rdynamic  -Mout=simv -Mamsrun="" -Mvcsaceobjs="" -Mobjects=" /app/synopsys/installers/vcs/W-2024.09/linux64/lib/libvirsim.so \
+/app/synopsys/installers/vcs/W-2024.09/linux64/lib/liberrorinf.so /app/synopsys/installers/vcs/W-2024.09/linux64/lib/libsnpsmalloc.so \
+/app/synopsys/installers/vcs/W-2024.09/linux64/lib/libvfs.so " -Mexternalobj= -Msaverestoreobj=/app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcs_save_restore_new.o \
+-Mcrt0= -Mcrtn="" -Mcsrc="" -Msyslibs=-ldl  -l debug5.log -Xvcs_run_simv=1 -full64 \
+-V -debug_access+all +vpi +vcsd1 +itf+/app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcsdp_lite.tab \
+-picarchive -gen_obj mod5_tb.v  
+                         Chronologic VCS (TM)
+         Version W-2024.09_Full64 -- Fri Feb 20 15:49:58 2026
+
+                    Copyright (c) 1991 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'mod5_tb.v'
+
+Error-[SFCOR] Source file cannot be opened
+  Source file "mod5.v" cannot be opened for reading due to 'No such file or 
+  directory'.
+  Please fix above issue and compile again.
+  "mod5_tb.v", 1
+  Source info: `include "mod5.v"
+
+1 error
+CPU time: .213 seconds to compile

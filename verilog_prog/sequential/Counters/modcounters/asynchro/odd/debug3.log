@@ -1,0 +1,116 @@
+
+Error-[VERDI_VCS_MM] Possible VERDI_HOME and VCS_HOME mismatch
+  The Verdi tab and pli.a cannot be added to the 'vcs' compile command because
+  the file '/pli.a' could not be found.
+  Please check to make sure VERDI_HOME and VCS_HOME point to installations 
+  that are either both 32-bits or both 64-bits.
+
+Command: vcs -full64 -V -R -debug_access+all mod3_tb.v -l debug3.log
+/app/synopsys/installers/vcs/W-2024.09/linux64/bin/vcs1 -Mcc=gcc -Mcplusplus=g++ \
+-Masflags= -Mcfl= -pipe -fPIC -O -I/app/synopsys/installers/vcs/W-2024.09/include \
+-Mxllcflags= -Mxcflags= -pipe -fPIC -I/app/synopsys/installers/vcs/W-2024.09/include \
+-Mldflags= -rdynamic  -Mout=simv -Mamsrun="" -Mvcsaceobjs="" -Mobjects=" /app/synopsys/installers/vcs/W-2024.09/linux64/lib/libvirsim.so \
+/app/synopsys/installers/vcs/W-2024.09/linux64/lib/liberrorinf.so /app/synopsys/installers/vcs/W-2024.09/linux64/lib/libsnpsmalloc.so \
+/app/synopsys/installers/vcs/W-2024.09/linux64/lib/libvfs.so " -Mexternalobj= -Msaverestoreobj=/app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcs_save_restore_new.o \
+-Mcrt0= -Mcrtn="" -Mcsrc="" -Msyslibs=-ldl  -l debug3.log -Xvcs_run_simv=1 -full64 \
+-V -debug_access+all +vpi +vcsd1 +itf+/app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcsdp_lite.tab \
+-picarchive -gen_obj mod3_tb.v  
+                         Chronologic VCS (TM)
+         Version W-2024.09_Full64 -- Fri Feb 20 15:49:45 2026
+
+                    Copyright (c) 1991 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'mod3_tb.v'
+Parsing included file 'mod3.v'.
+Parsing included file 't_ff.v'.
+Back to file 'mod3.v'.
+Back to file 'mod3_tb.v'.
+Top Level Modules:
+       mod3_tb
+No TimeScale specified
+Starting vcs inline pass...
+1 module and 0 UDP read.
+recompiling module mod3_tb
+( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20260220101945_1381772 product \
+)
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/app/synopsys/installers/vcs/W-2024.09/linux64/lib -L/app/synopsys/installers/vcs/W-2024.09/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _1382021_archive_1.so \
+SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o \
+-lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive          /app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcs_save_restore_new.o \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+Running simv -V -a debug3.log 
+Command: /home/dvft1103/dvft11/verilog_prog/sequential/Counters/modcounters/asynchro/odd/./simv -V -a debug3.log
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09_Full64; Runtime version W-2024.09_Full64;  Feb 20 15:49 2026
+VCS Build Date = Sep 02 2024 20:31:24
+Start run at Feb 20 15:49 2026
+
+                   0clk=0 reset=0 q=xx qb=xx
+                   3clk=0 reset=1 q=00 qb=11
+                   5clk=1 reset=1 q=00 qb=11
+                   6clk=1 reset=0 q=11 qb=00
+                  10clk=0 reset=0 q=00 qb=11
+                  15clk=1 reset=0 q=00 qb=11
+                  20clk=0 reset=0 q=01 qb=10
+                  25clk=1 reset=0 q=01 qb=10
+                  30clk=0 reset=0 q=10 qb=01
+                  35clk=1 reset=0 q=10 qb=01
+                  40clk=0 reset=0 q=01 qb=10
+                  45clk=1 reset=0 q=01 qb=10
+                  50clk=0 reset=0 q=10 qb=01
+                  55clk=1 reset=0 q=10 qb=01
+                  60clk=0 reset=0 q=01 qb=10
+                  65clk=1 reset=0 q=01 qb=10
+                  70clk=0 reset=0 q=10 qb=01
+                  75clk=1 reset=0 q=10 qb=01
+                  80clk=0 reset=0 q=01 qb=10
+                  85clk=1 reset=0 q=01 qb=10
+                  90clk=0 reset=0 q=10 qb=01
+                  95clk=1 reset=0 q=10 qb=01
+                 100clk=0 reset=0 q=01 qb=10
+                 105clk=1 reset=0 q=01 qb=10
+                 110clk=0 reset=0 q=10 qb=01
+                 115clk=1 reset=0 q=10 qb=01
+                 120clk=0 reset=0 q=01 qb=10
+                 125clk=1 reset=0 q=01 qb=10
+                 130clk=0 reset=0 q=10 qb=01
+                 135clk=1 reset=0 q=10 qb=01
+                 140clk=0 reset=0 q=01 qb=10
+                 145clk=1 reset=0 q=01 qb=10
+                 150clk=0 reset=0 q=10 qb=01
+                 155clk=1 reset=0 q=10 qb=01
+                 160clk=0 reset=0 q=01 qb=10
+                 165clk=1 reset=0 q=01 qb=10
+                 170clk=0 reset=0 q=10 qb=01
+                 175clk=1 reset=0 q=10 qb=01
+                 180clk=0 reset=0 q=01 qb=10
+                 185clk=1 reset=0 q=01 qb=10
+                 190clk=0 reset=0 q=10 qb=01
+                 195clk=1 reset=0 q=10 qb=01
+$finish called from file "mod3_tb.v", line 15.
+$finish at simulation time                  200
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 200
+CPU Time:      0.210 seconds;       Data structure size:   0.0Mb
+Fri Feb 20 15:49:47 2026
+CPU time: .319 seconds to compile + .367 seconds to elab + .368 seconds to link + .260 seconds in simulation

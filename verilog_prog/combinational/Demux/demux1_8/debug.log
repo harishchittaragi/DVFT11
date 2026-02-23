@@ -1,0 +1,81 @@
+
+Error-[VERDI_VCS_MM] Possible VERDI_HOME and VCS_HOME mismatch
+  The Verdi tab and pli.a cannot be added to the 'vcs' compile command because
+  the file '/pli.a' could not be found.
+  Please check to make sure VERDI_HOME and VCS_HOME point to installations 
+  that are either both 32-bits or both 64-bits.
+
+Command: vcs -full64 -V -R -debug_access+all demux18_tb.v -l debug.log
+/app/synopsys/installers/vcs/W-2024.09/linux64/bin/vcs1 -Mcc=gcc -Mcplusplus=g++ \
+-Masflags= -Mcfl= -pipe -fPIC -O -I/app/synopsys/installers/vcs/W-2024.09/include \
+-Mxllcflags= -Mxcflags= -pipe -fPIC -I/app/synopsys/installers/vcs/W-2024.09/include \
+-Mldflags= -rdynamic  -Mout=simv -Mamsrun="" -Mvcsaceobjs="" -Mobjects=" /app/synopsys/installers/vcs/W-2024.09/linux64/lib/libvirsim.so \
+/app/synopsys/installers/vcs/W-2024.09/linux64/lib/liberrorinf.so /app/synopsys/installers/vcs/W-2024.09/linux64/lib/libsnpsmalloc.so \
+/app/synopsys/installers/vcs/W-2024.09/linux64/lib/libvfs.so " -Mexternalobj= -Msaverestoreobj=/app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcs_save_restore_new.o \
+-Mcrt0= -Mcrtn="" -Mcsrc="" -Msyslibs=-ldl  -l debug.log -Xvcs_run_simv=1 -full64 \
+-V -debug_access+all +vpi +vcsd1 +itf+/app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcsdp_lite.tab \
+-picarchive -gen_obj demux18_tb.v  
+                         Chronologic VCS (TM)
+         Version W-2024.09_Full64 -- Fri Feb 20 12:43:02 2026
+
+                    Copyright (c) 1991 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'demux18_tb.v'
+Parsing included file 'demux18.v'.
+Back to file 'demux18_tb.v'.
+Top Level Modules:
+       demux18_tb
+No TimeScale specified
+Starting vcs inline pass...
+1 module and 0 UDP read.
+	However, due to incremental compilation, no re-compilation is necessary.
+( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20260220071302_1191778 product \
+)
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/app/synopsys/installers/vcs/W-2024.09/linux64/lib -L/app/synopsys/installers/vcs/W-2024.09/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _1192025_archive_1.so \
+_prev_archive_1.so   SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o            -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
+-luclinative /app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
+-lvcsucli    -Wl,-no-whole-archive          /app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcs_save_restore_new.o \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+Running simv -V -a debug.log 
+Command: /home/dvft1103/dvft11/verilog_prog/combinational/Demux/demux1_8/./simv -V -a debug.log
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09_Full64; Runtime version W-2024.09_Full64;  Feb 20 12:43 2026
+VCS Build Date = Sep 02 2024 20:31:24
+Start run at Feb 20 12:43 2026
+
+                   0the value of s=000 d=1 y=xxxxxxx1
+                  10the value of s=001 d=1 y=xxxxxx11
+                  20the value of s=010 d=1 y=xxxxx111
+                  30the value of s=011 d=1 y=xxxx1111
+                  40the value of s=100 d=1 y=xxx11111
+                  50the value of s=101 d=1 y=xx111111
+                  60the value of s=110 d=1 y=x1111111
+                  70the value of s=111 d=1 y=11111111
+$finish called from file "demux18_tb.v", line 16.
+$finish at simulation time                   80
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 80
+CPU Time:      0.180 seconds;       Data structure size:   0.0Mb
+Fri Feb 20 12:43:04 2026
+CPU time: .255 seconds to compile + .216 seconds to elab + .341 seconds to link + .212 seconds in simulation

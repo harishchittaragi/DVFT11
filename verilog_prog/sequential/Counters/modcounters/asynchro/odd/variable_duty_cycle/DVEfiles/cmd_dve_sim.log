@@ -1,0 +1,30 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /home/dvft1103/dvft11/verilog_prog/sequential/Counters/modcounters/asynchro/odd/variable_duty_cycle/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp7yJFJ5
+synUtils::sendTool -active {_icl_start_rpc -version "W-2024.09_Full64" -sync_file /tmp/vcs_dve_rpc.dvft1103.356886}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.dvft1103.356886}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+synopsys::dump -add {top_tb.top_inst.dut.q1 } -aggregates  -fid VPD0
+synopsys::dump -add {top_tb.top_inst.dut.q0 } -aggregates  -fid VPD0
+synopsys::dump -add {top_tb.top_inst.dut.q2 } -aggregates  -fid VPD0
+synopsys::dump -add {top_tb.clk top_tb.out top_tb.reset } -aggregates  -fid VPD0
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID

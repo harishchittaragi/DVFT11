@@ -1,0 +1,57 @@
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09_Full64; Runtime version W-2024.09_Full64;  Feb  6 12:34 2026
+[SCL] SCL trace is enabled.
+WARNING:Hostname to IPv4 and IPv6 address lookup failed for the host kailash.chipedge.local
+Checkout succeeded: VCS-BASE-RUNTIME/BF8A0CD431390852C9EF
+	License file: 27020@192.168.0.10
+	License Server: 27020@192.168.0.10
+[SCL] 02/06/2026 12:34:47 Checking status for feature VCS-BASE-RUNTIME
+[SCL] 02/06/2026 12:34:47 PID:356886 Client:meru.chipedge.local Server:27020@192.168.0.10 Checkout succeeded VCS-BASE-RUNTIME 2024.09
+VCD+ Writer W-2024.09_Full64 Copyright (c) 1991-2024 by Synopsys Inc.
+The file '/home/dvft1103/dvft11/verilog_prog/sequential/Counters/modcounters/asynchro/odd/variable_duty_cycle/inter.vpd' was opened successfully.
+                   0clk=0 reset=0 out=x
+                   3clk=0 reset=1 out=0
+                   5clk=1 reset=1 out=0
+                   6clk=1 reset=0 out=1
+                  10clk=0 reset=0 out=0
+                  15clk=1 reset=0 out=0
+                  20clk=0 reset=0 out=0
+                  25clk=1 reset=0 out=0
+                  30clk=0 reset=0 out=1
+                  35clk=1 reset=0 out=1
+                  40clk=0 reset=0 out=1
+                  45clk=1 reset=0 out=1
+                  50clk=0 reset=0 out=1
+                  55clk=1 reset=0 out=0
+                  60clk=0 reset=0 out=0
+                  65clk=1 reset=0 out=0
+                  70clk=0 reset=0 out=1
+                  75clk=1 reset=0 out=1
+                  80clk=0 reset=0 out=1
+                  85clk=1 reset=0 out=1
+                  90clk=0 reset=0 out=1
+                  95clk=1 reset=0 out=0
+                 100clk=0 reset=0 out=0
+                 105clk=1 reset=0 out=0
+                 110clk=0 reset=0 out=1
+                 115clk=1 reset=0 out=1
+                 120clk=0 reset=0 out=1
+                 125clk=1 reset=0 out=1
+                 130clk=0 reset=0 out=1
+                 135clk=1 reset=0 out=0
+                 140clk=0 reset=0 out=0
+                 145clk=1 reset=0 out=0
+                 150clk=0 reset=0 out=1
+                 155clk=1 reset=0 out=1
+                 160clk=0 reset=0 out=1
+                 165clk=1 reset=0 out=1
+                 170clk=0 reset=0 out=1
+                 175clk=1 reset=0 out=0
+                 180clk=0 reset=0 out=0
+                 185clk=1 reset=0 out=0
+                 190clk=0 reset=0 out=1
+                 195clk=1 reset=0 out=1
+$finish called from file "top_tb.v", line 14.
+$finish at simulation time                  200
+Simulation complete, time is 200.

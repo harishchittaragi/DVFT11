@@ -1,0 +1,107 @@
+0
+28
++itf+/app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcsdp_lite.tab
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/app/synopsys/installers/vcs/W-2024.09/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /app/synopsys/installers/vcs/W-2024.09/linux64/lib/libvirsim.so /app/synopsys/installers/vcs/W-2024.09/linux64/lib/liberrorinf.so /app/synopsys/installers/vcs/W-2024.09/linux64/lib/libsnpsmalloc.so /app/synopsys/installers/vcs/W-2024.09/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/app/synopsys/installers/vcs/W-2024.09/include
+-Mxllcflags=
+-V
+-Xvcs_run_simv=1
+-debug_access+all
+-full64
+-gen_obj
+-picarchive
+/app/synopsys/installers/vcs/W-2024.09/linux64/bin/vcs1
+top_tb.v
+60
+XRDP_SOCKET_PATH=/run/xrdp/1410
+XRDP_SESSION=274393
+XRDP_PULSE_SOURCE_SOCKET=xrdp_chansrv_audio_in_socket_13
+XRDP_PULSE_SINK_SOCKET=xrdp_chansrv_audio_out_socket_13
+XDG_SESSION_ID=c1153
+XDG_RUNTIME_DIR=/run/user/1410
+XDG_MENU_PREFIX=xfce-
+XDG_DATA_DIRS=/home/dvft1103/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/usr/share
+XDG_CURRENT_DESKTOP=XFCE
+XDG_CONFIG_DIRS=/etc/xdg
+VTE_VERSION=5204
+VMR_MODE_FLAG=64
+VERDI_HOME=/app/synopsys/installers/verdi/X-2025.06
+VENDOR=unknown
+VCS_PYTHON3=/app/synopsys/installers/vcs/W-2024.09//linux64/bin/Python3/bin/python3
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/app/synopsys/installers/vcs/W-2024.09/
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/app/synopsys/installers/vcs/W-2024.09/linux64
+TETRA_HOME=/app/synopsys/installers/txs2024.09
+S_COLORS=auto
+STARRC_HOME=/app/synopsys/installers/starrc_2023.12
+SSH_AUTH_SOCK=/tmp/ssh-PsbPqIgqq6oy/agent.274486
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=274487
+SPYGLASS_HOME=/app/synopsys/installers/spyglass2024.09/SPYGLASS_HOME
+SNPS_VCS_PYTHON3=/app/synopsys/installers/vcs/W-2024.09//linux64/bin/Python3/bin/python3
+SNPS_VCS_CLANG_PATH=/app/synopsys/installers/vcs/W-2024.09//linux64/clang
+SNPS_INTERNAL_VCS_LINUX_OS=linux
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/274409,unix/unix:/tmp/.ICE-unix/274409
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+SCL_HOME=/app/synopsys/installers/scl_2025
+PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+PRIME_TIME=/app/synopsys/installers/prime_2025.06
+PANEL_GDK_CORE_DEVICE_EVENTS=0
+OVA_UUM=0
+OSTYPE=linux
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KDEDIRS=/usr
+ICV_HOME_DIR=/app/synopsys/installers/icv_W-2024.09-4
+ICC_HOME=/app/synopsys/installers/icc2/W-2024.09-SP3/
+HOSTTYPE=x86_64-linux
+HISTTIMEFORMAT=%F %T 
+HISTCONTROL=ignoredups
+GROUP=dvft11
+FUSIONCOMPILER_HOME=/app/synopsys/installers/fc_2024.09
+FORMALITY=/app/synopsys/installers/fm_2025.06
+FLEXLM_DIAGNOSTICS=3
+DESKTOP_SESSION=xfce
+DC_HOME=/app/synopsys/installers/syn/X-2025.06/
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1410/bus
+COLORTERM=truecolor
+0
+0
+6
+1770276846 t_ff.v
+1770102140 mod5.v
+1770276725 d_ff.v
+1770361370 top.v
+1770361438 top_tb.v
+1725332768 /app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcsdp_lite.tab
+4
+1725336088 /app/synopsys/installers/vcs/W-2024.09/linux64/lib/libvirsim.so
+1725334290 /app/synopsys/installers/vcs/W-2024.09/linux64/lib/liberrorinf.so
+1725334282 /app/synopsys/installers/vcs/W-2024.09/linux64/lib/libsnpsmalloc.so
+1725334269 /app/synopsys/installers/vcs/W-2024.09/linux64/lib/libvfs.so
+1770361462 simv.daidir
+-1 partitionlib

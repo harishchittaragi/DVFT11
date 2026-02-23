@@ -1,0 +1,9 @@
+#!/bin/sh -h 
+PYTHONHOME=/app/synopsys/installers/vcs/W-2024.09//etc/search/pyh
+export PYTHONHOME
+PYTHONPATH=/app/synopsys/installers/vcs/W-2024.09/linux64/lib/pylib27
+export PYTHONPATH
+LD_LIBRARY_PATH=/app/synopsys/installers/vcs/W-2024.09/linux64/lib:/app/synopsys/installers/vcs/W-2024.09/linux64/lib/pylib27
+export LD_LIBRARY_PATH
+/app/synopsys/installers/vcs/W-2024.09/linux64/bin/vcsfind_create_index.exe  -z  "/home/dvft1103/dvft11/verilog_prog/sequential/Counters/modcounters/asynchro/odd/variable_duty_cycle/simv.daidir/debug_dump/fsearch/./idents_AVRtp1.xml.gz" "/home/dvft1103/dvft11/verilog_prog/sequential/Counters/modcounters/asynchro/odd/variable_duty_cycle/simv.daidir/debug_dump/fsearch/./idents_tapi.xml.gz" -o "/home/dvft1103/dvft11/verilog_prog/sequential/Counters/modcounters/asynchro/odd/variable_duty_cycle/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
+\mv "/home/dvft1103/dvft11/verilog_prog/sequential/Counters/modcounters/asynchro/odd/variable_duty_cycle/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/home/dvft1103/dvft11/verilog_prog/sequential/Counters/modcounters/asynchro/odd/variable_duty_cycle/simv.daidir/debug_dump/fsearch/fsearch.db"

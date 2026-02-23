@@ -1,0 +1,122 @@
+
+Error-[VERDI_VCS_MM] Possible VERDI_HOME and VCS_HOME mismatch
+  The Verdi tab and pli.a cannot be added to the 'vcs' compile command because
+  the file '/pli.a' could not be found.
+  Please check to make sure VERDI_HOME and VCS_HOME point to installations 
+  that are either both 32-bits or both 64-bits.
+
+Command: vcs -full64 -V -R -debug_access+all mod9_tb.v -l debug9.log
+/app/synopsys/installers/vcs/W-2024.09/linux64/bin/vcs1 -Mcc=gcc -Mcplusplus=g++ \
+-Masflags= -Mcfl= -pipe -fPIC -O -I/app/synopsys/installers/vcs/W-2024.09/include \
+-Mxllcflags= -Mxcflags= -pipe -fPIC -I/app/synopsys/installers/vcs/W-2024.09/include \
+-Mldflags= -rdynamic  -Mout=simv -Mamsrun="" -Mvcsaceobjs="" -Mobjects=" /app/synopsys/installers/vcs/W-2024.09/linux64/lib/libvirsim.so \
+/app/synopsys/installers/vcs/W-2024.09/linux64/lib/liberrorinf.so /app/synopsys/installers/vcs/W-2024.09/linux64/lib/libsnpsmalloc.so \
+/app/synopsys/installers/vcs/W-2024.09/linux64/lib/libvfs.so " -Mexternalobj= -Msaverestoreobj=/app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcs_save_restore_new.o \
+-Mcrt0= -Mcrtn="" -Mcsrc="" -Msyslibs=-ldl  -l debug9.log -Xvcs_run_simv=1 -full64 \
+-V -debug_access+all +vpi +vcsd1 +itf+/app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcsdp_lite.tab \
+-picarchive -gen_obj mod9_tb.v  
+                         Chronologic VCS (TM)
+         Version W-2024.09_Full64 -- Fri Feb 20 15:50:13 2026
+
+                    Copyright (c) 1991 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'mod9_tb.v'
+Parsing included file 'mod9.v'.
+Parsing included file 't_ff.v'.
+Back to file 'mod9.v'.
+Back to file 'mod9_tb.v'.
+Top Level Modules:
+       mod9_tb
+No TimeScale specified
+Starting vcs inline pass...
+2 modules and 0 UDP read.
+recompiling module t_ff
+recompiling module mod9_tb
+Both modules done.
+( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20260220102012_1384012 product \
+)
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/app/synopsys/installers/vcs/W-2024.09/linux64/lib -L/app/synopsys/installers/vcs/W-2024.09/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _1384257_archive_1.so \
+SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o \
+-lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive          /app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcs_save_restore_new.o \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+Running simv -V -a debug9.log 
+Command: /home/dvft1103/dvft11/verilog_prog/sequential/Counters/modcounters/asynchro/odd/./simv -V -a debug9.log
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09_Full64; Runtime version W-2024.09_Full64;  Feb 20 15:50 2026
+VCS Build Date = Sep 02 2024 20:31:24
+Start run at Feb 20 15:50 2026
+
+                   0clk=0 reset=0 q=xxxx qb=xxxx
+                   3clk=0 reset=1 q=xxxx qb=xxxx
+                   4clk=0 reset=1 q=0000 qb=1111
+                   5clk=1 reset=1 q=0000 qb=1111
+                   6clk=1 reset=0 q=0000 qb=1111
+                   7clk=1 reset=0 q=1111 qb=0000
+                  10clk=0 reset=0 q=0000 qb=1111
+                  15clk=1 reset=0 q=0000 qb=1111
+                  20clk=0 reset=0 q=0001 qb=1110
+                  25clk=1 reset=0 q=0001 qb=1110
+                  30clk=0 reset=0 q=0010 qb=1101
+                  35clk=1 reset=0 q=0010 qb=1101
+                  40clk=0 reset=0 q=0011 qb=1100
+                  45clk=1 reset=0 q=0011 qb=1100
+                  50clk=0 reset=0 q=0100 qb=1011
+                  55clk=1 reset=0 q=0100 qb=1011
+                  60clk=0 reset=0 q=0101 qb=1010
+                  65clk=1 reset=0 q=0101 qb=1010
+                  70clk=0 reset=0 q=0110 qb=1001
+                  75clk=1 reset=0 q=0110 qb=1001
+                  80clk=0 reset=0 q=0111 qb=1000
+                  85clk=1 reset=0 q=0111 qb=1000
+                  90clk=0 reset=0 q=1000 qb=0111
+                  95clk=1 reset=0 q=1000 qb=0111
+                 100clk=0 reset=0 q=1001 qb=0110
+                 101clk=0 reset=0 q=0000 qb=1111
+                 105clk=1 reset=0 q=0000 qb=1111
+                 110clk=0 reset=0 q=0001 qb=1110
+                 115clk=1 reset=0 q=0001 qb=1110
+                 120clk=0 reset=0 q=0010 qb=1101
+                 125clk=1 reset=0 q=0010 qb=1101
+                 130clk=0 reset=0 q=0011 qb=1100
+                 135clk=1 reset=0 q=0011 qb=1100
+                 140clk=0 reset=0 q=0100 qb=1011
+                 145clk=1 reset=0 q=0100 qb=1011
+                 150clk=0 reset=0 q=0101 qb=1010
+                 155clk=1 reset=0 q=0101 qb=1010
+                 160clk=0 reset=0 q=0110 qb=1001
+                 165clk=1 reset=0 q=0110 qb=1001
+                 170clk=0 reset=0 q=0111 qb=1000
+                 175clk=1 reset=0 q=0111 qb=1000
+                 180clk=0 reset=0 q=1000 qb=0111
+                 185clk=1 reset=0 q=1000 qb=0111
+                 190clk=0 reset=0 q=1001 qb=0110
+                 191clk=0 reset=0 q=0000 qb=1111
+                 195clk=1 reset=0 q=0000 qb=1111
+$finish called from file "mod9_tb.v", line 16.
+$finish at simulation time                  200
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 200
+CPU Time:      0.220 seconds;       Data structure size:   0.0Mb
+Fri Feb 20 15:50:15 2026
+CPU time: .354 seconds to compile + .367 seconds to elab + .373 seconds to link + .267 seconds in simulation
