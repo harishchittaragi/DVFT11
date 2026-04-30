@@ -18,7 +18,6 @@ typedef enum logic[1:0] {
         ACCESS = 2'b10
         } apb_state_e;
 
-
 class apb_transaction ;
       bit       psel;
       bit       penable;
@@ -29,13 +28,11 @@ rand  bit       pwrite;
       bit[31:0] prdata;
 rand  bit[31:0] pwdata;
       bit       pslverr;
-
      apb_state_e apb_state;
-
-      constraint c_paddr {soft paddr inside {[0:32'hffff_ffff]};}
-      function void display(string name);
+     constraint c_paddr {soft paddr inside {[0:32'hffff_ffff]};}
+     function void display(string name);
              $display("[%0t] [%s] paddr=%0d pwrite=%0b pwdata=%0d prdata=%0d pslverr=%0b",
-              $time,name, paddr, pwrite, pwdata, prdata, pslverr);      
+             $time,name, paddr, pwrite, pwdata, prdata, pslverr);      
       endfunction
 endclass:apb_transaction
 `endif
