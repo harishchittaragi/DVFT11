@@ -1,0 +1,95 @@
+Command: vcs -full64 -sverilog -R -debug_access+all fifo_tb.sv -l debug.log
+                         Chronologic VCS (TM)
+         Version W-2024.09_Full64 -- Wed Mar 11 15:09:51 2026
+
+                    Copyright (c) 1991 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'fifo_tb.sv'
+Parsing included file 'fifo.sv'.
+Back to file 'fifo_tb.sv'.
+Top Level Modules:
+       fifo_tb
+No TimeScale specified
+Starting vcs inline pass...
+1 module and 0 UDP read.
+recompiling module fifo_tb
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/app/synopsys/installers/vcs/W-2024.09/linux64/lib -L/app/synopsys/installers/vcs/W-2024.09/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _1132736_archive_1.so \
+SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o \
+-lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   \
+/app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcs_save_restore_new.o /app/synopsys/installers/verdi/X-2025.06/share/PLI/VCS/LINUX64/pli.a \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+Command: /home/dvft1103/dvft11/system_verilog/FIFO/synch/./simv -a debug.log
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09_Full64; Runtime version W-2024.09_Full64;  Mar 11 15:09 2026
+                   5
+ SCENARIO 1
+                  15Write Data Data_in=1
+                  35Write Data Data_in=10
+                  55Write Data Data_in=100
+                  85Read_data data_out=1
+                 105Read_data data_out=10
+                 125Read_data data_out=100
+                 125
+ SCENARIO 2
+                 135Write Data Data_in=1
+                 165Read_data data_out=1
+                 175Write Data Data_in=2
+                 205Read_data data_out=2
+                 215Write Data Data_in=4
+                 245Read_data data_out=4
+                 255Write Data Data_in=8
+                 285Read_data data_out=8
+                 295Write Data Data_in=16
+                 325Read_data data_out=16
+                 335Write Data Data_in=32
+                 365Read_data data_out=32
+                 375Write Data Data_in=64
+                 405Read_data data_out=64
+                 415Write Data Data_in=128
+                 445Read_data data_out=128
+                 445
+ SCENARIO 3
+                 455Write Data Data_in=1
+                 475Write Data Data_in=2
+                 495Write Data Data_in=4
+                 515Write Data Data_in=8
+                 535Write Data Data_in=16
+                 555Write Data Data_in=32
+                 575Write Data Data_in=64
+                 595Write Data Data_in=128
+                 625Read_data data_out=1
+                 645Read_data data_out=2
+                 665Read_data data_out=4
+                 685Read_data data_out=8
+                 705Read_data data_out=16
+                 725Read_data data_out=32
+                 745Read_data data_out=64
+                 765Read_data data_out=128
+$finish called from file "fifo_tb.sv", line 71.
+$finish at simulation time                  805
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 805
+CPU Time:      0.160 seconds;       Data structure size:   0.0Mb
+Wed Mar 11 15:09:52 2026
+CPU time: .262 seconds to compile + .293 seconds to elab + .282 seconds to link + .194 seconds in simulation

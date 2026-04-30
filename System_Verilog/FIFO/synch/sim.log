@@ -1,0 +1,166 @@
+Command: vcs -full64 -sverilog -R -debug_access+all fifo_tb_new.sv -cm line+cond+fsm+assert+branch \
+-l sim.log
+                         Chronologic VCS (TM)
+         Version W-2024.09_Full64 -- Mon Apr 20 21:15:18 2026
+
+                    Copyright (c) 1991 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'fifo_tb_new.sv'
+Parsing included file 'fifo.sv'.
+Back to file 'fifo_tb_new.sv'.
+Top Level Modules:
+       fifo_tb
+No TimeScale specified
+VCS Coverage Metrics Release W-2024.09_Full64 Copyright (c) 1991-2024 by Synopsys Inc.
+Starting vcs inline pass...
+1 module and 0 UDP read.
+recompiling module fifo_tb
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/app/synopsys/installers/vcs/W-2024.09/linux64/lib -L/app/synopsys/installers/vcs/W-2024.09/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _905121_archive_1.so \
+_prev_archive_1.so   SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o            -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
+-lreader_common /app/synopsys/installers/vcs/W-2024.09/linux64/lib/libBA.a -luclinative \
+/app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
+-lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcs_save_restore_new.o \
+/app/synopsys/installers/verdi/X-2025.06/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm \
+-lpthread -ldl 
+../simv up to date
+Command: /home/dvft1103/dvft11/system_verilog/FIFO/synch/./simv -cm_runsilent -cm line+cond+fsm+assert+branch -a sim.log
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09_Full64; Runtime version W-2024.09_Full64;  Apr 20 21:15 2026
+
+===== SCENARIO 1: Basic Write then Read =====
+INFO: WRITE | data=10 | time=25
+INFO: WRITE | data=15 | time=45
+INFO: WRITE | data=100 | time=65
+INFO: READ | data=10 | time=95
+INFO: READ | data=15 | time=115
+INFO: READ | data=100 | time=135
+INFO: FIFO EMPTY at time 135
+
+===== SCENARIO 2: Interleaved Write and Read =====
+INFO: WRITE | data=1 | time=145
+INFO: READ | data=1 | time=175
+INFO: FIFO EMPTY at time 175
+INFO: WRITE | data=2 | time=185
+INFO: READ | data=2 | time=215
+INFO: FIFO EMPTY at time 215
+INFO: WRITE | data=4 | time=225
+INFO: READ | data=4 | time=255
+INFO: FIFO EMPTY at time 255
+INFO: WRITE | data=8 | time=265
+INFO: READ | data=8 | time=295
+INFO: FIFO EMPTY at time 295
+INFO: WRITE | data=16 | time=305
+INFO: READ | data=16 | time=335
+INFO: FIFO EMPTY at time 335
+INFO: WRITE | data=32 | time=345
+INFO: READ | data=32 | time=375
+INFO: FIFO EMPTY at time 375
+INFO: WRITE | data=64 | time=385
+INFO: READ | data=64 | time=415
+INFO: FIFO EMPTY at time 415
+INFO: WRITE | data=128 | time=425
+INFO: READ | data=128 | time=455
+INFO: FIFO EMPTY at time 455
+
+===== SCENARIO 3: Fill FIFO completely then drain =====
+INFO: WRITE | data=1 | time=465
+INFO: WRITE | data=2 | time=485
+INFO: WRITE | data=4 | time=505
+INFO: WRITE | data=8 | time=525
+INFO: WRITE | data=16 | time=545
+INFO: WRITE | data=32 | time=565
+INFO: WRITE | data=64 | time=585
+INFO: WRITE | data=128 | time=605
+INFO: READ | data=1 | time=635
+INFO: READ | data=2 | time=655
+INFO: READ | data=4 | time=675
+INFO: READ | data=8 | time=695
+INFO: READ | data=16 | time=715
+INFO: READ | data=32 | time=735
+INFO: READ | data=64 | time=755
+INFO: READ | data=128 | time=775
+INFO: FIFO EMPTY at time 775
+
+===== SCENARIO 4: ERROR -- Write when FIFO is FULL =====
+INFO: WRITE | data=50 | time=785
+INFO: WRITE | data=51 | time=805
+INFO: WRITE | data=52 | time=825
+INFO: WRITE | data=53 | time=845
+INFO: WRITE | data=54 | time=865
+INFO: WRITE | data=55 | time=885
+INFO: WRITE | data=56 | time=905
+INFO: WRITE | data=57 | time=925
+ERROR: WRITE_WHEN_FULL | attempted_data=99 | time=945
+INFO: READ | data=50 | time=975
+INFO: READ | data=51 | time=995
+INFO: READ | data=52 | time=1015
+INFO: READ | data=53 | time=1035
+INFO: READ | data=54 | time=1055
+INFO: READ | data=55 | time=1075
+INFO: READ | data=56 | time=1095
+INFO: READ | data=57 | time=1115
+INFO: FIFO EMPTY at time 1115
+
+===== SCENARIO 5: ERROR -- Read when FIFO is EMPTY =====
+ERROR: READ_WHEN_EMPTY | time=1125
+ERROR: READ_WHEN_EMPTY | time=1145
+
+===== SCENARIO 6: Boundary -- Single write and read =====
+INFO: WRITE | data=42 | time=1165
+INFO: READ | data=42 | time=1195
+INFO: FIFO EMPTY at time 1195
+ERROR: READ_WHEN_EMPTY | time=1205
+
+===== SCENARIO 7: Max and zero value data patterns =====
+INFO: WRITE | data=4294967295 | time=1225
+INFO: READ | data=4294967295 | time=1255
+INFO: FIFO EMPTY at time 1255
+INFO: WRITE | data=0 | time=1265
+INFO: READ | data=0 | time=1295
+INFO: FIFO EMPTY at time 1295
+INFO: WRITE | data=43981 | time=1305
+INFO: READ | data=43981 | time=1335
+INFO: FIFO EMPTY at time 1335
+
+============================================
+  FUNCTIONAL COVERAGE REPORT
+============================================
+  fifo_signal_cg  coverage : 96.88%
+  fifo_data_cg    coverage : 80.00%
+  fifo_state_cg   coverage : 85.94%
+  TOTAL coverage           : 87.60%
+============================================
+
+
+===== SIMULATION COMPLETE =====
+$finish called from file "fifo_tb_new.sv", line 365.
+$finish at simulation time                 1375
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1375
+CPU Time:      0.200 seconds;       Data structure size:   0.0Mb
+Mon Apr 20 21:15:20 2026
+CPU time: .318 seconds to compile + .276 seconds to elab + .316 seconds to link + .241 seconds in simulation

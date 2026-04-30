@@ -1,0 +1,64 @@
+Command: vcs -full64 -sverilog -R -debug_access+all random_ex5.sv -l debug_ex5.log \
+
+                         Chronologic VCS (TM)
+         Version W-2024.09_Full64 -- Tue Mar 10 12:55:19 2026
+
+                    Copyright (c) 1991 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'random_ex5.sv'
+Top Level Modules:
+       packet_ex
+No TimeScale specified
+Starting vcs inline pass...
+1 module and 0 UDP read.
+recompiling module packet_ex
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/app/synopsys/installers/vcs/W-2024.09/linux64/lib -L/app/synopsys/installers/vcs/W-2024.09/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _3942087_archive_1.so \
+_prev_archive_1.so   SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o            -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
+-luclinative /app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
+-lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcs_save_restore_new.o \
+/app/synopsys/installers/verdi/X-2025.06/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm \
+-lpthread -ldl 
+../simv up to date
+Command: /home/dvft1103/dvft11/system_verilog/randomization/./simv -a debug_ex5.log
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09_Full64; Runtime version W-2024.09_Full64;  Mar 10 12:55 2026
+                   0a='{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0} 
+                   2a='{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0} 
+                   4a='{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0} 
+                   6a='{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0} 
+                   8a='{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0} 
+                  10a='{-384116807, -1593209748, -1589970777, -1333235549, 2063212956, -816528844, 1299674169, 1775187075, 1921570068, -50609930, -244906414, -2017560375, -367227685, -51231690, 604801641, -7118710} 
+                  12a='{1637914715, 1233360000, 1959907722, 1981917762, 544271061, 1115228545, -2063541398, 49887629, -346177331, 1730167828, -1044787431, -413094102, 480320895, 1094105208, 880826207, 921936949} 
+                  14a='{397247290, -277685674, 1541889331, -1282256434, 2145167130, 986512640, -573423815, 1602901179, -1186944684, 1766079824, -1265270399, 904087724, -790269457, -1961270946, 356889120, 676106297} 
+                  16a='{-407577593, -1435914926, 1483337049, -1361658139, 547650128, -1635431754, -370184676, 1175172663, -441693730, 1469317818, -1161450473, -26043423, 512478990, -48354820, -393778098, 481873579} 
+                  18a='{-1298805792, -1452694196, -907768476, -222450708, 1529991033, -2115737025, 961087982, -781529006, -1381085000, -1889475660, -2084490209, 1137239275, -866022059, -1377461945, -658659416, -1076908150} 
+                  20a='{842439123, 150072278, -1397549008, 1595207985, 298565361, 717502027, -146432591, 1899717256, -1165491839, 302173145, -341613577, 1720366334, 1794513211, -1738575790, 410458938, -1257407160} 
+                  22a='{1249691690, 1815877660, 40671725, -876975237, -2006500183, 1083171501, -629666408, -861488040, -1503752736, -1041941340, -1969778360, -666221658, -683355429, 1565303971, 1291351076, 443989613} 
+                  24a='{-872730637, -354697074, -1895365839, 917123802, 449271490, -1127639830, -328672390, 161616345, 1156218013, -2127070230, 1778528721, -1733811498, 28493181, -225278424, 1875699581, 80725751} 
+                  26a='{1274975648, 1343686035, 1739827842, 242394827, -586684915, 1924666731, 2054129838, 189353687, 1876914768, -254091866, 8749687, 99689170, 592539272, 1526535618, 605402317, 1485282102} 
+                  28a='{2069063609, 2014635271, -59470792, -1521330610, 1867465141, 497057233, 1034784263, -1122216623, 1858939592, 1034254125, 68260281, -1741136597, -1873862782, 1120215297, -900209055, -1922628196} 
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 30
+CPU Time:      0.210 seconds;       Data structure size:   0.0Mb
+Tue Mar 10 12:55:21 2026
+CPU time: .365 seconds to compile + .245 seconds to elab + .558 seconds to link + .256 seconds in simulation

@@ -1,0 +1,33 @@
+Command: vcs -full64 -sverilog -R -debug_access+all random_ex1.sv -l debug_ex1.log \
+
+                         Chronologic VCS (TM)
+         Version W-2024.09_Full64 -- Thu Mar  5 12:03:42 2026
+
+                    Copyright (c) 1991 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'random_ex1.sv'
+Top Level Modules:
+       random_ex
+No TimeScale specified
+
+Error-[TFAFTC] Too few arguments to function/task call
+random_ex1.sv, 15
+"p_h.display(p_h.randomize())"
+  The above function/task call is not done with sufficient arguments.
+
+1 error
+CPU time: .195 seconds to compile

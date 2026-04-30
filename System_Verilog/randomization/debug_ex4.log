@@ -1,0 +1,44 @@
+Command: vcs -full64 -sverilog -R -debug_access+all random_ex4.sv -l debug_ex4.log \
+
+                         Chronologic VCS (TM)
+         Version W-2024.09_Full64 -- Mon Mar  9 16:15:11 2026
+
+                    Copyright (c) 1991 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'random_ex4.sv'
+Top Level Modules:
+       tb
+No TimeScale specified
+
+Error-[IMEMCT] Invalid memory usage
+random_ex4.sv, 49
+$unit, "this.b"
+  Memory or memory slice is not permitted to be used in following contexts:
+  	 1. conditional expression in if/case/while statements and so on
+  	 2. source or target expression of assignment statements
+  	 3. operand of equality operator
+
+
+Error-[TCF-ICE] Illegal conditional expression
+random_ex4.sv, 49
+$unit, "this.b"
+  Illegal conditional expression: this.b. The expression must be of a singular
+  type.
+  Change the expression so that it yields a singular value.
+
+2 errors
+CPU time: .206 seconds to compile
