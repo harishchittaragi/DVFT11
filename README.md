@@ -18,7 +18,7 @@ This work is part of the **Design Verification Fundamentals Training (DVFT11)** 
 ## 🛠 Tools Used
 
 * Synopsys VCS – Simulation
-* Synopsys DVE – Waveform Debugging
+* Synopsys DVE & verdi – Waveform Debugging
 * Linux Environment – Execution Platform
 * Git & GitHub – Version Control
 
