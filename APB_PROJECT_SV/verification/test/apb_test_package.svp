@@ -1,0 +1,25 @@
+//*************************************************//
+//Author: HARISH RAMANNA CHITTARAGI
+//E-mail: chittaragiharish@gmail.com
+//Description: This package encapsulates all APB test
+//             classes including base test and derived
+//             test scenarios such as write, read,
+//             error, and read-write tests.
+//             It imports the environment package and
+//             provides a structured and reusable way
+//             to organize and execute different test
+//             cases in the APB verification framework.
+//Date: 04/03/2026 to  20/04/2026.
+//*************************************************//
+
+`ifndef _APB_TEST_PACKAGE
+`define _APB_TEST_PACKAGE
+package apb_test_package;
+import apb_env_package::*;
+`include "apb_test.sv"
+`include "apb_write_test.sv"
+`include "apb_read_test.sv"
+`include "apb_error_test.sv"
+`include "apb_rw_test.sv"
+endpackage
+`endif

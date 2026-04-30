@@ -1,0 +1,20 @@
+//*************************************************//
+//Author: HARISH RAMANNA CHITTARAGI
+//E-mail: chittaragiharish@gmail.com
+//Description: This package encapsulates the APB environment
+//             components including the scoreboard and
+//             environment class. It imports the APB agent
+//             package and provides a complete integration
+//             of all verification components required to
+//             build the APB testbench.
+//Date: 04/03/2026 to  20/04/2026.
+//*************************************************//
+
+`ifndef _APB_ENV_PACKAGE
+`define _APB_ENV_PACKAGE
+package apb_env_package;
+import apb_agent_package::*;
+   `include "apb_score_board.sv"
+   `include "apb_env.sv"
+endpackage
+`endif

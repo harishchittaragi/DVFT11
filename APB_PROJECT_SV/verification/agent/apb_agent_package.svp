@@ -1,0 +1,23 @@
+//*************************************************//
+//Author: HARISH RAMANNA CHITTARAGI
+//E-mail: chittaragiharish@gmail.com
+//Description: This package encapsulates all APB agent
+//             components including transaction, generator,
+//             driver, monitor, and agent classes.
+//             It provides a modular and reusable structure
+//             for building the APB verification environment
+//             by grouping all related components into a
+//             single package.
+//Date: 04/03/2026 to  20/04/2026.
+//*************************************************//
+
+`ifndef _APB_AGENT_PACKAGE
+`define _APB_AGENT_PACKAGE
+package apb_agent_package;
+`include "apb_transaction.sv"
+`include "apb_generator.sv"
+`include "apb_driver.sv"
+`include "apb_monitor.sv"
+`include "apb_agent.sv"
+endpackage
+`endif
