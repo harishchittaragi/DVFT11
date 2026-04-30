@@ -108,52 +108,45 @@ class apb_monitor;
     
   task run();
     forever begin
-              apb_proto_cg.sample();
+      apb_proto_cg.sample();
       @(vif.monitor_cb);
 
       if(!vif.presetn || $isunknown(vif.presetn))
          continue;
       if(!vif.monitor_cb.psel || vif.monitor_cb.penable)
          continue;
-       transaction_h.apb_state=IDLE;
-       apb_state_cg.sample();
-
-              transaction_h.paddr  = vif.monitor_cb.paddr;
-              transaction_h.pwrite = vif.monitor_cb.pwrite;
-              transaction_h.pwdata = vif.monitor_cb.pwdata;
-             
-              $display("[MON] setup detected: paddr=0x%0h pwrite=%0b prdata=%0b",
-                 transaction_h.paddr,transaction_h.pwrite,transaction_h.prdata);
-             
-       transaction_h.apb_state= SETUP;
-       apb_state_cg.sample();
-              @(vif.monitor_cb);
-
-              if(!vif.presetn || $isunknown(vif.presetn)) begin
-                 $display("[MON] Reset during Access Phase --droping transaction");
-                 continue;
-              end
-
-              if(!vif.monitor_cb.penable) begin
-                 $error("[MON] %0t :penable is not asserted after SETUP",$time);
-                 continue;
-              end
-       transaction_h.apb_state=ACCESS;
-       apb_state_cg.sample();
-              
-           while(!vif.monitor_cb.pready) begin
-              @(vif.monitor_cb);
-              if(!vif.presetn || $isunknown(vif.presetn)) begin
-                 $display("[MON] Reset while waiting for pready --droping transaction");
-                break;
-              end
-           end
-              transaction_h.prdata =vif.monitor_cb.prdata;
-              transaction_h.pslverr =vif.monitor_cb.pslverr;
-              transaction_h.display("MON");
-              mon_sb.put(transaction_h);
-              $display("[MON] Transaction sent to scoreboard");
-              end
-           endtask
+      transaction_h.apb_state=IDLE;
+      apb_state_cg.sample();
+      transaction_h.paddr  = vif.monitor_cb.paddr;
+      transaction_h.pwrite = vif.monitor_cb.pwrite;
+      transaction_h.pwdata = vif.monitor_cb.pwdata;       
+      $display("[MON] setup detected: paddr=0x%0h pwrite=%0b prdata=%0b",transaction_h.paddr,transaction_h.pwrite,transaction_h.prdata); 
+      transaction_h.apb_state= SETUP;
+      apb_state_cg.sample();
+      @(vif.monitor_cb);
+      if(!vif.presetn || $isunknown(vif.presetn)) begin
+        $display("[MON] Reset during Access Phase --droping transaction");
+        continue;
+      end
+      if(!vif.monitor_cb.penable) begin
+        $error("[MON] %0t :penable is not asserted after SETUP",$time);
+        continue;
+      end
+      transaction_h.apb_state=ACCESS;
+      apb_state_cg.sample();       
+      while(!vif.monitor_cb.pready) begin
+        @(vif.monitor_cb);
+        if(!vif.presetn || $isunknown(vif.presetn)) begin
+          $display("[MON] Reset while waiting for pready --droping transaction");
+          break;
+        end
+      end
+      transaction_h.prdata =vif.monitor_cb.prdata;
+      transaction_h.pslverr =vif.monitor_cb.pslverr;
+      transaction_h.display("MON");
+      mon_sb.put(transaction_h);
+      $display("[MON] Transaction sent to scoreboard");
+  end
+endtask
 endclass:apb_monitor
 `endif
