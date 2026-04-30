@@ -1,4 +1,4 @@
-//*************************************************//
+//*************************************************************//
 //Author: HARISH RAMANNA CHITTARAGI
 //E-mail: chittaragiharish@gmail.com
 //Description: This file implements the APB Driver.
@@ -8,7 +8,7 @@
 //             phase execution, wait-state management,
 //             and transaction resume capability after reset.
 //Date: 04/03/2026 to  20/04/2026.
-//*************************************************//
+//************************************************************//
 
 `ifndef _APB_DRIVER
 `define _APB_DRIVER
@@ -82,7 +82,7 @@ class apb_driver;
          @(vif.master_cb);
          if(!vif.presetn || $isunknown(vif.presetn)) begin
             reset_logic();
-            $display("[DRV] Reset detected after access State before entering to ready state- saving                      trans to resum_drv");
+            $display("[DRV] Reset detected after access State before entering to ready state- saving trans to resum_drv");
             resume_drv.put(transaction_h);
             vif.master_cb.psel <= 1'b0;
             vif.master_cb.penable<=1'b0;
