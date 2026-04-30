@@ -60,7 +60,7 @@ This repository serves as:
 
 ## 👨‍💻 Author
 
-**Harish Chittaragi**
+**Harish Ramanna Chittaragi**
 Electronics and Communication Engineering (ECE)
 Aspiring VLSI Design Verification Engineer
 
