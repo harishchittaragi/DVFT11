@@ -1,0 +1,7 @@
+this is child class init function
+this is parent2 class display function
+this is parent1 class display function
+this is child class display function
+[<class '__main__.child'>, <class '__main__.parent1'>, <class '__main__.parent2'>, <class 'object'>]
+this is parent2 class display function
+this is parent1 class display function

@@ -1,0 +1,9 @@
+Hello, Harish
+5
+Positional arguments ('Harish', 23)
+Keyword Arguments ('harish', 22)
+Default type args ('harish', 23)
+ *args type 15
+ **data ('name', 'Harish')
+ **data ('age', 22)
+ **data ('branch', 'ECE')

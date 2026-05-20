@@ -1,0 +1,10 @@
+This is parent class init function
+This is child class init function
+This is grand_child class init function
+This is parent class display function with name :Harish
+This is child class display function with number 23
+This is grand_child class display function with 3333333
+Harish
+23
+3333333
+This is parent class display function with name :Hari

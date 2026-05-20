@@ -1,0 +1,63 @@
+{}
+{'name': 'Harish', 'Age': 22, 'city': 'Bangaluru'}
+{'a': 1, 'b': 2}
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+****Access******
+Harish
+Harish
+N/A
+******Adding and Updating*******
+{'name': 'Harish', 'Age': 22, 'city': 'Bangaluru'}
+{'name': 'Harish', 'Age': 30, 'city': 'Bangaluru', 'email': 'abc@gmail.com'}
+{'name': 'Harish', 'Age': 30, 'city': 'Bangaluru', 'email': 'abc@gmail.com', 'age': 33, 'City': 'India'}
+{'name': 'Harish', 'Age': 30, 'city': 'Bangaluru', 'email': 'abc@gmail.com', 'age': 33, 'City': 'India', 'score': 0}
+****Deleting elments******
+Bangaluru
+None
+('score', 0)
+***Checking Membership*****
+True
+True
+****Iterating****
+name
+Age
+email
+City
+******
+name
+Age
+email
+City
+******
+Harish
+30
+abc@gmail.com
+India
+******
+  name    Harish
+  Age    30
+  email    abc@gmail.com
+  City    India
+*****Dictionary views****
+dict_keys(['name', 'Age', 'email', 'City'])
+dict_values(['Harish', 30, 'abc@gmail.com', 'India'])
+dict_items([('name', 'Harish'), ('Age', 30), ('email', 'abc@gmail.com'), ('City', 'India')])
+****Copying******
+{'name': 'Harish', 'Age': 30, 'email': 'abc@gmail.com', 'City': 'India'}
+{'name': 'Harish', 'Age': 30, 'email': 'abc@gmail.com', 'City': 'India'}
+{'name': 'Harish', 'Age': 30, 'email': 'abc@gmail.com', 'City': 'India'}
+{'name': 'Harish', 'Age': 30, 'email': 'abc@gmail.com', 'City': 'India'}
+{'name': 'Harish', 'Age': 30, 'email': 'abc@gmail.com', 'City': 'India', 'age': 2222}
+****Merging****
+{'name': 'hari', 'age': '23', 'id': 'DVFT1103', 'work': 'chipedge'}
+{'name': 'hari', 'age': '23', 'id': 'DVFT1103', 'work': 'chipedge'}
+****Sorting****
+{'age': '23', 'id': 'DVFT1103', 'name': 'hari', 'work': 'chipedge'}
+{'age': '23', 'id': 'DVFT1103', 'work': 'chipedge', 'name': 'hari'}
+{'name': 'hari', 'work': 'chipedge', 'id': 'DVFT1103', 'age': '23'}
+***Nested Dictionaries****
+{'Harish': {'age': 23, 'city': 'BGK'}, 'Hari': {'age': 18, 'city': 'Bang'}}
+23
+Bang
+{'Harish': {'age': 23, 'city': 'BGK'}, 'Hari': {'age': 18, 'city': 'sf'}}
+d5   {'a': 1, 'e': 2, 'i': 3, 'o': 4, 'u': 5}

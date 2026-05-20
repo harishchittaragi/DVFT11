@@ -1,0 +1,4 @@
+this is child class init function
+this is grandchild class init function
+This is grandchild class display function
+[<class '__main__.grand_child'>, <class '__main__.child'>, <class '__main__.parent2'>, <class '__main__.parent1'>, <class 'object'>]
