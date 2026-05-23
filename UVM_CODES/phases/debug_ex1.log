@@ -1,0 +1,542 @@
+Command: vcs -full64 -sverilog -R -debug_access+all -ntb_opts uvm-1.2 phase_ex1.sv \
+-l debug_ex1.log
+                         Chronologic VCS (TM)
+         Version W-2024.09_Full64 -- Wed Apr 15 15:42:02 2026
+
+                    Copyright (c) 1991 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_pkg.sv'
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/macros/uvm_version_defines.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/macros/uvm_global_defines.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/macros/snps_macros.svp'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/macros/uvm_message_defines.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/macros/uvm_phase_defines.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/macros/uvm_object_defines.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/macros/uvm_printer_defines.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/macros/uvm_tlm_defines.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_tlm_imps.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/macros/uvm_tlm_defines.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/macros/uvm_sequence_defines.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/macros/uvm_callback_defines.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/macros/uvm_reg_defines.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/macros/uvm_deprecated_defines.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_macros.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/dpi/uvm_dpi.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/dpi/uvm_hdl.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/dpi/uvm_dpi.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/dpi/uvm_svcmd_dpi.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/dpi/uvm_dpi.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/dpi/uvm_regex.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/dpi/uvm_dpi.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_coreservice.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_version.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_object_globals.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_misc.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_object.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_pool.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_queue.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_factory.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_registry.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_spell_chkr.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_resource.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_resource_specializations.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_resource_db.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_config_db.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_printer.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_comparer.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_packer.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_links.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_tr_database.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_tr_stream.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_recorder.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_event_callback.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_event.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_barrier.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_callback.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_macros.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_callback.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_report_message.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_report_catcher.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_report_server.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_report_handler.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_report_object.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_transaction.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_phase.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_domain.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_bottomup_phase.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_topdown_phase.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_task_phase.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_common_phases.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_runtime_phases.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_component.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_root.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_component.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_objection.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_heartbeat.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_globals.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_cmdline_processor.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_traversal.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_base.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/dap/uvm_dap.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/dap/uvm_set_get_dap_base.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/dap/uvm_dap.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/dap/uvm_simple_lock_dap.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/dap/uvm_dap.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/dap/uvm_get_to_lock_dap.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/dap/uvm_dap.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/dap/uvm_set_before_get_dap.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/dap/uvm_dap.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_tlm_ifs.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_sqr_ifs.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_port_base.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_tlm_imps.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_imps.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_ports.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_exports.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_analysis_port.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_tlm_fifo_base.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_tlm_fifos.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_tlm_req_rsp.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_sqr_connections.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_pair.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_policies.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_in_order_comparator.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_algorithmic_comparator.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_random_stimulus.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_subscriber.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_monitor.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_driver.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_push_driver.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_scoreboard.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_agent.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_env.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_test.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/comps/uvm_comps.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_sequence_item.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_sequencer_base.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_sequencer_analysis_fifo.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_sequencer_param_base.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_sequencer.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_push_sequencer.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_sequence_base.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_sequence.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_sequence_library.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_sequence_builtin.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/seq/uvm_seq.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm2/uvm_tlm2_defines.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm2/uvm_tlm2_time.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm2/uvm_tlm2_generic_payload.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm2/uvm_tlm2_ifs.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm2/uvm_tlm2_imps.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm2/uvm_tlm2_ports.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm2/uvm_tlm2_exports.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm2/uvm_tlm2_sockets_base.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm2/uvm_tlm2_sockets.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_item.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_adapter.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_predictor.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_sequence.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_cbs.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_backdoor.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_field.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_vreg_field.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_indirect.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_fifo.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_file.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_mem_mam.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_vreg.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_mem.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_map.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_block.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/sequences/uvm_reg_hw_reset_seq.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/sequences/uvm_reg_bit_bash_seq.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/sequences/uvm_mem_walk_seq.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/sequences/uvm_mem_access_seq.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/sequences/uvm_reg_access_seq.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/sequences/uvm_reg_mem_shared_access_seq.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/sequences/uvm_reg_mem_built_in_seq.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/snps_uvm_reg_bank.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/vcs/vcs_uvm_alt.sv'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_pkg.sv'.
+Parsing design file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv'
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/vcs/msglog.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/vcs/uvm_msglog_report_server.sv'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/vcs/uvm_vcs_recorder.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/vcs/uvm_vcs_tr_database.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/vcs/uvm_vcs_tr_stream.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/vcs/uvm_vcs_tr_database.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/vcs/uvm_vcs_recorder.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/vcs/uvm_vcs_record_interface.sv'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/macros/uvm_global_defines.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/vcs/uvm_vcs_record_interface.sv'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing design file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_macros.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_verdi_recorder.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_verdi_pli_base.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_verdi_recorder.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_verdi_tr_database.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_verdi_tr_stream.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_verdi_tr_database.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_verdi_recorder.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_verdi_reg_map_recording.sv'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_verdi_message_catcher.svh'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_verdi_pli_base.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_verdi_message_catcher.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_verdi_factory.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/./dpi/uvm_verdi_dpi.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_verdi_reg_recording.sv'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/app/synopsys/installers/verdi/X-2025.06/share/PLI/VCS/include/verdi_trans_recorder_dpi.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_verdi_pli.svh'.
+Back to file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing design file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'
+Parsing design file 'phase_ex1.sv'
+Parsing included file '/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/uvm_macros.svh'.
+Back to file 'phase_ex1.sv'.
+Top Level Modules:
+       uvm_custom_install_recording
+       uvm_custom_install_verdi_recording
+       phase_ex1
+No TimeScale specified
+Starting vcs inline pass...
+7 modules and 0 UDP read.
+recompiling package vcs_paramclassrepository
+recompiling package _vcs_DPI_package
+recompiling package uvm_pkg
+recompiling package _vcs_msglog
+recompiling module uvm_custom_install_recording
+recompiling module uvm_custom_install_verdi_recording
+recompiling module phase_ex1
+All of 7 modules done
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+g++ -w  -pipe -DVCSMX -DUVM_DPI_DO_TYPE_CHECK -fPIC -O -I/app/synopsys/installers/vcs/W-2024.09/include \
+-c /app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/dpi/uvm_dpi.cc
+g++ -w  -pipe -DVCSMX -DUVM_DPI_DO_TYPE_CHECK -fPIC -O -I/app/synopsys/installers/vcs/W-2024.09/include \
+-c /app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/verdi/dpi/uvm_verdi_dpi.cpp \
+
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/app/synopsys/installers/vcs/W-2024.09/linux64/lib -L/app/synopsys/installers/vcs/W-2024.09/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1 uvm_dpi.o uvm_verdi_dpi.o   objs/amcQw_d.o \
+_4152324_archive_1.so   SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o            -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
+-luclinative /app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
+-lvcsucli    -Wl,-no-whole-archive       ./../simv.daidir/vc_hdrs.o  _vcs_pli_stub_.o \
+/app/synopsys/installers/vcs/W-2024.09/linux64/lib/vcs_save_restore_new.o /app/synopsys/installers/verdi/X-2025.06/share/PLI/VCS/LINUX64/pli.a \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+Command: /home/dvft1103/dvft11/uvm/./simv -a debug_ex1.log
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09_Full64; Runtime version W-2024.09_Full64;  Apr 15 15:42 2026
+UVM_INFO /app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+//========================================================================================//      
+//build_phase is top-down approach
+This is test new block
+UVM_INFO @ 0: reporter [RNTST] Running test test...
+This is test build_phase
+This is env new block
+This is env build_phase
+This is agent new block
+This is agent build_phase
+This is driver new block
+This is monitor new block
+This is driver build phase
+This is monitor build phase
+//connect_phase is bottom-up approach
+This is driver connect_phase
+This is monitor connect_phase
+This is agent connect_phase
+This is env connect_phase
+This is test connect_phase
+//end_of_elaboration_phase is bottom-up approach
+This is driver end_of_elaboration_phase
+This is monitor end_of_elaboration_phase
+This is agent end_of_elaboration_phase
+This is env end_of_elaboration_phase
+This is test end_of_elaboration_phase
+//start_of_simulation_phase is bottom-up approach
+This is driver start_of_simulation_phase
+This is monitor start_of_simulation_phase
+This is agent start_of_simulation_phase
+This is env start_of_simulation_phase
+This is test start_of_simulation_phase
+//run_phase is not bottom_up/top_down/ --->it is completely based on time delay
+//specified in between phases and subphases 
+this is driver run_phase
+this is monitor run_phase
+this is agent run_phase
+this is env run_phase
+this is test run_phase
+this is driver reset_phase
+this is monitor reset_phase
+this is agent reset_phase
+this is env reset_phase
+this is test reset_phase
+this is driver configure_phase
+this is monitor configure_phase
+this is agent configure_phase
+this is env configure_phase
+this is test configure_phase
+this is driver main_phase
+this is monitor main_phase
+this is agent main_phase
+this is env main_phase
+this is test main_phase
+this is driver shutdown_phase
+this is monitor shutdown_phase
+this is agent shutdown_phase
+this is env shutdown_phase
+this is test shutdown_phase
+//time delay specified statements displayed as like below without following
+//any orders
+after time delay in agent run phase   {1}
+after time delay in test run phase   {2}
+after time delay in env run phase   {5}
+after time delay in monitor run phase   {6}
+after time delay in driver run phase   {8}
+UVM_INFO /app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_objection.svh(1276) @ 8: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+//extract_phase is bottom-up approach
+This is driver extract_phase
+This is monitor extract_phase
+This is agent extract_phase
+This is env extract_phase
+This is test extract_phase
+//check_phase is bottom-up approach
+This is driver check_phase
+This is monitor check_phase
+This is agent check_phase
+This is env check_phase
+This is test check_phase
+//report_phase is bottom-up approach
+This is driver report_phase
+This is monitor report_phase
+This is agent report_phase
+This is env report_phase
+This is test report_phase
+//final_phase istop_down approach
+This is test final_phase
+This is env final_phase
+This is agent final_phase
+This is driver final_phase
+This is monitor final_phase
+
+//========================================================================================//
+UVM_INFO /app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 8: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_report_server.svh(904) @ 8: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    4
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+
+$finish called from file "/app/synopsys/installers/vcs/W-2024.09//etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time                    8
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 8
+CPU Time:      0.260 seconds;       Data structure size:   0.5Mb
+Wed Apr 15 15:42:16 2026
+CPU time: 10.107 seconds to compile + .340 seconds to elab + 1.136 seconds to link + .294 seconds in simulation
