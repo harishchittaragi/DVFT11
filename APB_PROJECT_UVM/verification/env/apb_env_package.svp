@@ -1,0 +1,27 @@
+//*************************************************//
+//Author: HARISH RAMANNA CHITTARAGI
+//E-mail: chittaragiharish@gmail.com
+//Description: APB environment package that
+//             integrates agent package and
+//             includes scoreboard, coverage,
+//             and environment components for
+//             complete UVM verification setup.
+//Date: 08/05/2026 to 15/05/2026.
+//*************************************************//
+
+`ifndef _APB_ENV_PACKAGE
+`define _APB_ENV_PACKAGE
+package apb_env_package;
+// importing uvm packages.
+import uvm_pkg::*;
+`include "uvm_macros.svh"
+
+// importing agent package.
+import apb_agent_package::*;
+
+// importing env directory all .sv files
+`include "apb_score_board.sv"
+`include "apb_coverage.sv"
+`include "apb_env.sv"
+endpackage
+`endif

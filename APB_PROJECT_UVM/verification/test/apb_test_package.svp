@@ -1,0 +1,31 @@
+//*************************************************//
+//Author: HARISH RAMANNA CHITTARAGI
+//E-mail: chittaragiharish@gmail.com
+//Description: APB test package that integrates
+//             agent and environment packages,
+//             and includes all test sequences
+//             and test class for complete
+//             UVM verification execution.//Date: 08/05/2026 to 15/05/2026.
+//*************************************************//
+
+`ifndef _APB_TEST_PACKAGE
+`define _APB_TEST_PACKAGE
+
+package apb_test_package;
+//importing uvm packages
+import uvm_pkg::*;
+`include "uvm_macros.svh"
+
+// importing env package.
+import apb_agent_package::*;
+import apb_env_package::*;
+
+// importing test directory all .sv files.
+`include "apb_error_seq.sv"
+`include "apb_read_seq.sv"
+`include "apb_write_seq.sv"
+`include "apb_rw_seq.sv"
+`include "apb_con_psel_seq.sv"
+`include "apb_test.sv"
+endpackage
+`endif

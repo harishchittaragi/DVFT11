@@ -1,0 +1,28 @@
+//*************************************************//
+//Author: HARISH RAMANNA CHITTARAGI
+//E-mail: chittaragiharish@gmail.com
+//Description: APB agent package integrating all
+//             verification components required
+//             for building active and passive
+//             UVM agents.
+//Date: 08/05/2026 to  15/05/2026.
+//*************************************************//
+
+`ifndef _APB_AGENT_PACKAGE
+`define _APB_AGENT_PACKAGE
+
+package apb_agent_package;
+// importing uvm packages.
+import uvm_pkg::*;
+`include "uvm_macros.svh"
+
+// importing all agent directory .sv files
+`include "apb_sequence_item.sv"
+`include "apb_sequencer.sv"
+`include "apb_driver.sv"
+`include "apb_active_monitor.sv"
+`include "apb_active_agent.sv"
+`include "apb_passive_monitor.sv"
+`include "apb_passive_agent.sv"
+endpackage
+`endif
