@@ -1,0 +1,408 @@
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.assertions.interior.cs.body
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test spi_test...
+# UVM_INFO spi_seq1.sv(17) @ 15: uvm_test_top.env_h.agent_h.seqr_h@@seq1_h [SEQ1] This si Seq1--------------------------------------------------------------------------------------------------
+# Name                           Type               Size  Value                                   
+# ------------------------------------------------------------------------------------------------
+# item_h                         uvm_sequence_item  -     @627                                    
+#   tx_data                      integral           8     'h94                                    
+#   rx_data                      integral           8     'h0                                     
+#   ss_n                         integral           1     'h0                                     
+#   cpol                         integral           1     'h0                                     
+#   cpha                         integral           1     'h0                                     
+#   lsb_first                    integral           1     'h0                                     
+#   clk_div                      integral           32    'h2c                                    
+#   num_bits                     integral           32    'h8                                     
+#   begin_time                   time               64    15                                      
+#   depth                        int                32    'd2                                     
+#   parent sequence (name)       string             6     seq1_h                                  
+#   parent sequence (full name)  string             40    uvm_test_top.env_h.agent_h.seqr_h.seq1_h
+#   sequencer                    string             33    uvm_test_top.env_h.agent_h.seqr_h       
+# ------------------------------------------------------------------------------------------------
+# 
+# UVM_ERROR spi_interface.sv(65) @ 15: reporter [ASSERT] sclk toggled while ss_n=1 (slave deselected)
+# UVM_INFO spi_monitor.sv(56) @ 20: uvm_test_top.env_h.agent_h.mon_h [MON] Observed tx_d load = 0x94
+# UVM_INFO spi_driver.sv(60) @ 475: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=7) = 1
+# UVM_INFO spi_driver.sv(60) @ 1355: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=6) = 0
+# UVM_INFO spi_driver.sv(60) @ 2235: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=5) = 0
+# UVM_INFO spi_driver.sv(60) @ 3115: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=4) = 1
+# UVM_INFO spi_driver.sv(60) @ 3995: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=3) = 0
+# UVM_INFO spi_driver.sv(60) @ 4875: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=2) = 1
+# UVM_INFO spi_driver.sv(60) @ 5755: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=1) = 0
+# UVM_INFO spi_driver.sv(60) @ 6635: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=0) = 0
+# UVM_INFO spi_monitor.sv(90) @ 7100: uvm_test_top.env_h.agent_h.mon_h [MON] MON Transaction: rx_data=0x94 tx_data=0x94 cpol=0 cpha=0 clk_div=44
+# UVM_INFO spi_scoreboard.sv(32) @ 7100: uvm_test_top.env_h.sb_h [SCB] MATCH: tx_data=0x94 == rx_data=0x94
+# UVM_INFO spi_driver.sv(90) @ 7525: uvm_test_top.env_h.agent_h.drv_h [DRV] Captured rx_data = 0x94 (expected tx_d loopback = 0x94)
+# UVM_INFO spi_seq1.sv(17) @ 7965: uvm_test_top.env_h.agent_h.seqr_h@@seq1_h [SEQ1] This si Seq1--------------------------------------------------------------------------------------------------
+# Name                           Type               Size  Value                                   
+# ------------------------------------------------------------------------------------------------
+# item_h                         uvm_sequence_item  -     @689                                    
+#   tx_data                      integral           8     'he7                                    
+#   rx_data                      integral           8     'h0                                     
+#   ss_n                         integral           1     'h0                                     
+#   cpol                         integral           1     'h0                                     
+#   cpha                         integral           1     'h0                                     
+#   lsb_first                    integral           1     'h0                                     
+#   clk_div                      integral           32    'h13                                    
+#   num_bits                     integral           32    'h8                                     
+#   begin_time                   time               64    7965                                    
+#   depth                        int                32    'd2                                     
+#   parent sequence (name)       string             6     seq1_h                                  
+#   parent sequence (full name)  string             40    uvm_test_top.env_h.agent_h.seqr_h.seq1_h
+#   sequencer                    string             33    uvm_test_top.env_h.agent_h.seqr_h       
+# ------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO spi_monitor.sv(56) @ 7970: uvm_test_top.env_h.agent_h.mon_h [MON] Observed tx_d load = 0xe7
+# UVM_INFO spi_driver.sv(60) @ 8175: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=7) = 1
+# UVM_INFO spi_driver.sv(60) @ 8555: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=6) = 1
+# UVM_INFO spi_driver.sv(60) @ 8935: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=5) = 1
+# UVM_INFO spi_driver.sv(60) @ 9315: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=4) = 0
+# UVM_INFO spi_driver.sv(60) @ 9695: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=3) = 0
+# UVM_INFO spi_driver.sv(60) @ 10075: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=2) = 1
+# UVM_INFO spi_driver.sv(60) @ 10455: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=1) = 1
+# UVM_INFO spi_driver.sv(60) @ 10835: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=0) = 1
+# UVM_INFO spi_monitor.sv(90) @ 11050: uvm_test_top.env_h.agent_h.mon_h [MON] MON Transaction: rx_data=0xe7 tx_data=0xe7 cpol=0 cpha=0 clk_div=19
+# UVM_INFO spi_scoreboard.sv(32) @ 11050: uvm_test_top.env_h.sb_h [SCB] MATCH: tx_data=0xe7 == rx_data=0xe7
+# UVM_INFO spi_driver.sv(90) @ 11225: uvm_test_top.env_h.agent_h.drv_h [DRV] Captured rx_data = 0xe7 (expected tx_d loopback = 0xe7)
+# UVM_INFO spi_seq1.sv(17) @ 11415: uvm_test_top.env_h.agent_h.seqr_h@@seq1_h [SEQ1] This si Seq1--------------------------------------------------------------------------------------------------
+# Name                           Type               Size  Value                                   
+# ------------------------------------------------------------------------------------------------
+# item_h                         uvm_sequence_item  -     @723                                    
+#   tx_data                      integral           8     'hb0                                    
+#   rx_data                      integral           8     'h0                                     
+#   ss_n                         integral           1     'h0                                     
+#   cpol                         integral           1     'h0                                     
+#   cpha                         integral           1     'h1                                     
+#   lsb_first                    integral           1     'h0                                     
+#   clk_div                      integral           32    'h32                                    
+#   num_bits                     integral           32    'h8                                     
+#   begin_time                   time               64    11415                                   
+#   depth                        int                32    'd2                                     
+#   parent sequence (name)       string             6     seq1_h                                  
+#   parent sequence (full name)  string             40    uvm_test_top.env_h.agent_h.seqr_h.seq1_h
+#   sequencer                    string             33    uvm_test_top.env_h.agent_h.seqr_h       
+# ------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO spi_monitor.sv(56) @ 11420: uvm_test_top.env_h.agent_h.mon_h [MON] Observed tx_d load = 0xb0
+# UVM_INFO spi_monitor.sv(90) @ 18960: uvm_test_top.env_h.agent_h.mon_h [MON] MON Transaction: rx_data=0xb0 tx_data=0xb0 cpol=0 cpha=1 clk_div=50
+# UVM_INFO spi_scoreboard.sv(32) @ 18960: uvm_test_top.env_h.sb_h [SCB] MATCH: tx_data=0xb0 == rx_data=0xb0
+# UVM_INFO spi_driver.sv(90) @ 19945: uvm_test_top.env_h.agent_h.drv_h [DRV] Captured rx_data = 0xb0 (expected tx_d loopback = 0xb0)
+# UVM_INFO spi_seq1.sv(17) @ 20445: uvm_test_top.env_h.agent_h.seqr_h@@seq1_h [SEQ1] This si Seq1--------------------------------------------------------------------------------------------------
+# Name                           Type               Size  Value                                   
+# ------------------------------------------------------------------------------------------------
+# item_h                         uvm_sequence_item  -     @741                                    
+#   tx_data                      integral           8     'h7c                                    
+#   rx_data                      integral           8     'h0                                     
+#   ss_n                         integral           1     'h0                                     
+#   cpol                         integral           1     'h0                                     
+#   cpha                         integral           1     'h0                                     
+#   lsb_first                    integral           1     'h0                                     
+#   clk_div                      integral           32    'h15                                    
+#   num_bits                     integral           32    'h8                                     
+#   begin_time                   time               64    20445                                   
+#   depth                        int                32    'd2                                     
+#   parent sequence (name)       string             6     seq1_h                                  
+#   parent sequence (full name)  string             40    uvm_test_top.env_h.agent_h.seqr_h.seq1_h
+#   sequencer                    string             33    uvm_test_top.env_h.agent_h.seqr_h       
+# ------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO spi_monitor.sv(56) @ 20450: uvm_test_top.env_h.agent_h.mon_h [MON] Observed tx_d load = 0x7c
+# UVM_INFO spi_driver.sv(60) @ 20675: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=7) = 0
+# UVM_INFO spi_driver.sv(60) @ 21095: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=6) = 1
+# UVM_INFO spi_driver.sv(60) @ 21515: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=5) = 1
+# UVM_INFO spi_driver.sv(60) @ 21935: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=4) = 1
+# UVM_INFO spi_driver.sv(60) @ 22355: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=3) = 1
+# UVM_INFO spi_driver.sv(60) @ 22775: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=2) = 1
+# UVM_INFO spi_driver.sv(60) @ 23195: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=1) = 0
+# UVM_INFO spi_driver.sv(60) @ 23615: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=0) = 0
+# UVM_INFO spi_monitor.sv(90) @ 23850: uvm_test_top.env_h.agent_h.mon_h [MON] MON Transaction: rx_data=0x7c tx_data=0x7c cpol=0 cpha=0 clk_div=21
+# UVM_INFO spi_scoreboard.sv(32) @ 23850: uvm_test_top.env_h.sb_h [SCB] MATCH: tx_data=0x7c == rx_data=0x7c
+# UVM_INFO spi_driver.sv(90) @ 24045: uvm_test_top.env_h.agent_h.drv_h [DRV] Captured rx_data = 0x7c (expected tx_d loopback = 0x7c)
+# UVM_INFO spi_seq1.sv(17) @ 24255: uvm_test_top.env_h.agent_h.seqr_h@@seq1_h [SEQ1] This si Seq1--------------------------------------------------------------------------------------------------
+# Name                           Type               Size  Value                                   
+# ------------------------------------------------------------------------------------------------
+# item_h                         uvm_sequence_item  -     @775                                    
+#   tx_data                      integral           8     'he1                                    
+#   rx_data                      integral           8     'h0                                     
+#   ss_n                         integral           1     'h0                                     
+#   cpol                         integral           1     'h0                                     
+#   cpha                         integral           1     'h1                                     
+#   lsb_first                    integral           1     'h0                                     
+#   clk_div                      integral           32    'h14                                    
+#   num_bits                     integral           32    'h8                                     
+#   begin_time                   time               64    24255                                   
+#   depth                        int                32    'd2                                     
+#   parent sequence (name)       string             6     seq1_h                                  
+#   parent sequence (full name)  string             40    uvm_test_top.env_h.agent_h.seqr_h.seq1_h
+#   sequencer                    string             33    uvm_test_top.env_h.agent_h.seqr_h       
+# ------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO spi_monitor.sv(56) @ 24260: uvm_test_top.env_h.agent_h.mon_h [MON] Observed tx_d load = 0xe1
+# UVM_INFO spi_monitor.sv(90) @ 27300: uvm_test_top.env_h.agent_h.mon_h [MON] MON Transaction: rx_data=0xe1 tx_data=0xe1 cpol=0 cpha=1 clk_div=20
+# UVM_INFO spi_scoreboard.sv(32) @ 27300: uvm_test_top.env_h.sb_h [SCB] MATCH: tx_data=0xe1 == rx_data=0xe1
+# UVM_INFO spi_driver.sv(90) @ 27685: uvm_test_top.env_h.agent_h.drv_h [DRV] Captured rx_data = 0xe1 (expected tx_d loopback = 0xe1)
+# UVM_INFO spi_seq2.sv(23) @ 27885: uvm_test_top.env_h.agent_h.seqr_h@@seq2_h [SEQ2] This si Seq2--------------------------------------------------------------------------------------------------
+# Name                           Type               Size  Value                                   
+# ------------------------------------------------------------------------------------------------
+# item_h                         uvm_sequence_item  -     @797                                    
+#   tx_data                      integral           8     'h0                                     
+#   rx_data                      integral           8     'h0                                     
+#   ss_n                         integral           1     'h0                                     
+#   cpol                         integral           1     'h0                                     
+#   cpha                         integral           1     'h0                                     
+#   lsb_first                    integral           1     'h0                                     
+#   clk_div                      integral           32    'ha                                     
+#   num_bits                     integral           32    'h8                                     
+#   begin_time                   time               64    27885                                   
+#   depth                        int                32    'd2                                     
+#   parent sequence (name)       string             6     seq2_h                                  
+#   parent sequence (full name)  string             40    uvm_test_top.env_h.agent_h.seqr_h.seq2_h
+#   sequencer                    string             33    uvm_test_top.env_h.agent_h.seqr_h       
+# ------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO spi_monitor.sv(56) @ 27890: uvm_test_top.env_h.agent_h.mon_h [MON] Observed tx_d load = 0x0
+# UVM_INFO spi_driver.sv(60) @ 28005: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=7) = 0
+# UVM_INFO spi_driver.sv(60) @ 28205: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=6) = 0
+# UVM_INFO spi_driver.sv(60) @ 28405: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=5) = 0
+# UVM_INFO spi_driver.sv(60) @ 28605: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=4) = 0
+# UVM_INFO spi_driver.sv(60) @ 28805: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=3) = 0
+# UVM_INFO spi_driver.sv(60) @ 29005: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=2) = 0
+# UVM_INFO spi_driver.sv(60) @ 29205: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=1) = 0
+# UVM_INFO spi_driver.sv(60) @ 29405: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=0) = 0
+# UVM_INFO spi_monitor.sv(90) @ 29530: uvm_test_top.env_h.agent_h.mon_h [MON] MON Transaction: rx_data=0x0 tx_data=0x0 cpol=0 cpha=0 clk_div=10
+# UVM_INFO spi_scoreboard.sv(32) @ 29530: uvm_test_top.env_h.sb_h [SCB] MATCH: tx_data=0x0 == rx_data=0x0
+# UVM_INFO spi_driver.sv(90) @ 29615: uvm_test_top.env_h.agent_h.drv_h [DRV] Captured rx_data = 0x0 (expected tx_d loopback = 0x0)
+# UVM_INFO spi_seq2.sv(23) @ 29715: uvm_test_top.env_h.agent_h.seqr_h@@seq2_h [SEQ2] This si Seq2--------------------------------------------------------------------------------------------------
+# Name                           Type               Size  Value                                   
+# ------------------------------------------------------------------------------------------------
+# item_h                         uvm_sequence_item  -     @831                                    
+#   tx_data                      integral           8     'h0                                     
+#   rx_data                      integral           8     'h0                                     
+#   ss_n                         integral           1     'h0                                     
+#   cpol                         integral           1     'h0                                     
+#   cpha                         integral           1     'h1                                     
+#   lsb_first                    integral           1     'h0                                     
+#   clk_div                      integral           32    'hd                                     
+#   num_bits                     integral           32    'h8                                     
+#   begin_time                   time               64    29715                                   
+#   depth                        int                32    'd2                                     
+#   parent sequence (name)       string             6     seq2_h                                  
+#   parent sequence (full name)  string             40    uvm_test_top.env_h.agent_h.seqr_h.seq2_h
+#   sequencer                    string             33    uvm_test_top.env_h.agent_h.seqr_h       
+# ------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO spi_monitor.sv(56) @ 29720: uvm_test_top.env_h.agent_h.mon_h [MON] Observed tx_d load = 0x0
+# UVM_INFO spi_monitor.sv(90) @ 31710: uvm_test_top.env_h.agent_h.mon_h [MON] MON Transaction: rx_data=0x0 tx_data=0x0 cpol=0 cpha=1 clk_div=13
+# UVM_INFO spi_scoreboard.sv(32) @ 31710: uvm_test_top.env_h.sb_h [SCB] MATCH: tx_data=0x0 == rx_data=0x0
+# UVM_INFO spi_driver.sv(90) @ 31955: uvm_test_top.env_h.agent_h.drv_h [DRV] Captured rx_data = 0x0 (expected tx_d loopback = 0x0)
+# UVM_INFO spi_seq2.sv(23) @ 32085: uvm_test_top.env_h.agent_h.seqr_h@@seq2_h [SEQ2] This si Seq2--------------------------------------------------------------------------------------------------
+# Name                           Type               Size  Value                                   
+# ------------------------------------------------------------------------------------------------
+# item_h                         uvm_sequence_item  -     @849                                    
+#   tx_data                      integral           8     'hff                                    
+#   rx_data                      integral           8     'h0                                     
+#   ss_n                         integral           1     'h0                                     
+#   cpol                         integral           1     'h0                                     
+#   cpha                         integral           1     'h0                                     
+#   lsb_first                    integral           1     'h0                                     
+#   clk_div                      integral           32    'h2                                     
+#   num_bits                     integral           32    'h8                                     
+#   begin_time                   time               64    32085                                   
+#   depth                        int                32    'd2                                     
+#   parent sequence (name)       string             6     seq2_h                                  
+#   parent sequence (full name)  string             40    uvm_test_top.env_h.agent_h.seqr_h.seq2_h
+#   sequencer                    string             33    uvm_test_top.env_h.agent_h.seqr_h       
+# ------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO spi_monitor.sv(56) @ 32090: uvm_test_top.env_h.agent_h.mon_h [MON] Observed tx_d load = 0xff
+# UVM_INFO spi_driver.sv(60) @ 32125: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=7) = 1
+# UVM_INFO spi_driver.sv(60) @ 32165: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=6) = 1
+# UVM_INFO spi_driver.sv(60) @ 32205: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=5) = 1
+# UVM_INFO spi_driver.sv(60) @ 32245: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=4) = 1
+# UVM_INFO spi_driver.sv(60) @ 32285: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=3) = 1
+# UVM_INFO spi_driver.sv(60) @ 32325: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=2) = 1
+# UVM_INFO spi_driver.sv(60) @ 32365: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=1) = 1
+# UVM_INFO spi_driver.sv(60) @ 32405: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=0) = 1
+# UVM_INFO spi_monitor.sv(90) @ 32450: uvm_test_top.env_h.agent_h.mon_h [MON] MON Transaction: rx_data=0xff tx_data=0xff cpol=0 cpha=0 clk_div=2
+# UVM_INFO spi_scoreboard.sv(32) @ 32450: uvm_test_top.env_h.sb_h [SCB] MATCH: tx_data=0xff == rx_data=0xff
+# UVM_INFO spi_driver.sv(90) @ 32455: uvm_test_top.env_h.agent_h.drv_h [DRV] Captured rx_data = 0xff (expected tx_d loopback = 0xff)
+# UVM_INFO spi_seq2.sv(23) @ 32475: uvm_test_top.env_h.agent_h.seqr_h@@seq2_h [SEQ2] This si Seq2--------------------------------------------------------------------------------------------------
+# Name                           Type               Size  Value                                   
+# ------------------------------------------------------------------------------------------------
+# item_h                         uvm_sequence_item  -     @883                                    
+#   tx_data                      integral           8     'hff                                    
+#   rx_data                      integral           8     'h0                                     
+#   ss_n                         integral           1     'h0                                     
+#   cpol                         integral           1     'h0                                     
+#   cpha                         integral           1     'h1                                     
+#   lsb_first                    integral           1     'h0                                     
+#   clk_div                      integral           32    'h21                                    
+#   num_bits                     integral           32    'h8                                     
+#   begin_time                   time               64    32475                                   
+#   depth                        int                32    'd2                                     
+#   parent sequence (name)       string             6     seq2_h                                  
+#   parent sequence (full name)  string             40    uvm_test_top.env_h.agent_h.seqr_h.seq2_h
+#   sequencer                    string             33    uvm_test_top.env_h.agent_h.seqr_h       
+# ------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO spi_monitor.sv(56) @ 32480: uvm_test_top.env_h.agent_h.mon_h [MON] Observed tx_d load = 0xff
+# UVM_INFO spi_monitor.sv(90) @ 37470: uvm_test_top.env_h.agent_h.mon_h [MON] MON Transaction: rx_data=0xff tx_data=0xff cpol=0 cpha=1 clk_div=33
+# UVM_INFO spi_scoreboard.sv(32) @ 37470: uvm_test_top.env_h.sb_h [SCB] MATCH: tx_data=0xff == rx_data=0xff
+# UVM_INFO spi_driver.sv(90) @ 38115: uvm_test_top.env_h.agent_h.drv_h [DRV] Captured rx_data = 0xff (expected tx_d loopback = 0xff)
+# UVM_INFO spi_seq2.sv(23) @ 38445: uvm_test_top.env_h.agent_h.seqr_h@@seq2_h [SEQ2] This si Seq2--------------------------------------------------------------------------------------------------
+# Name                           Type               Size  Value                                   
+# ------------------------------------------------------------------------------------------------
+# item_h                         uvm_sequence_item  -     @901                                    
+#   tx_data                      integral           8     'ha5                                    
+#   rx_data                      integral           8     'h0                                     
+#   ss_n                         integral           1     'h0                                     
+#   cpol                         integral           1     'h0                                     
+#   cpha                         integral           1     'h0                                     
+#   lsb_first                    integral           1     'h0                                     
+#   clk_div                      integral           32    'h17                                    
+#   num_bits                     integral           32    'h8                                     
+#   begin_time                   time               64    38445                                   
+#   depth                        int                32    'd2                                     
+#   parent sequence (name)       string             6     seq2_h                                  
+#   parent sequence (full name)  string             40    uvm_test_top.env_h.agent_h.seqr_h.seq2_h
+#   sequencer                    string             33    uvm_test_top.env_h.agent_h.seqr_h       
+# ------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO spi_monitor.sv(56) @ 38450: uvm_test_top.env_h.agent_h.mon_h [MON] Observed tx_d load = 0xa5
+# UVM_INFO spi_driver.sv(60) @ 38695: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=7) = 1
+# UVM_INFO spi_driver.sv(60) @ 39155: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=6) = 0
+# UVM_INFO spi_driver.sv(60) @ 39615: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=5) = 1
+# UVM_INFO spi_driver.sv(60) @ 40075: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=4) = 0
+# UVM_INFO spi_driver.sv(60) @ 40535: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=3) = 0
+# UVM_INFO spi_driver.sv(60) @ 40995: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=2) = 1
+# UVM_INFO spi_driver.sv(60) @ 41455: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=1) = 0
+# UVM_INFO spi_driver.sv(60) @ 41915: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=0) = 1
+# UVM_INFO spi_monitor.sv(90) @ 42170: uvm_test_top.env_h.agent_h.mon_h [MON] MON Transaction: rx_data=0xa5 tx_data=0xa5 cpol=0 cpha=0 clk_div=23
+# UVM_INFO spi_scoreboard.sv(32) @ 42170: uvm_test_top.env_h.sb_h [SCB] MATCH: tx_data=0xa5 == rx_data=0xa5
+# UVM_INFO spi_driver.sv(90) @ 42385: uvm_test_top.env_h.agent_h.drv_h [DRV] Captured rx_data = 0xa5 (expected tx_d loopback = 0xa5)
+# UVM_INFO spi_seq2.sv(23) @ 42615: uvm_test_top.env_h.agent_h.seqr_h@@seq2_h [SEQ2] This si Seq2--------------------------------------------------------------------------------------------------
+# Name                           Type               Size  Value                                   
+# ------------------------------------------------------------------------------------------------
+# item_h                         uvm_sequence_item  -     @935                                    
+#   tx_data                      integral           8     'ha5                                    
+#   rx_data                      integral           8     'h0                                     
+#   ss_n                         integral           1     'h0                                     
+#   cpol                         integral           1     'h0                                     
+#   cpha                         integral           1     'h1                                     
+#   lsb_first                    integral           1     'h0                                     
+#   clk_div                      integral           32    'h32                                    
+#   num_bits                     integral           32    'h8                                     
+#   begin_time                   time               64    42615                                   
+#   depth                        int                32    'd2                                     
+#   parent sequence (name)       string             6     seq2_h                                  
+#   parent sequence (full name)  string             40    uvm_test_top.env_h.agent_h.seqr_h.seq2_h
+#   sequencer                    string             33    uvm_test_top.env_h.agent_h.seqr_h       
+# ------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO spi_monitor.sv(56) @ 42620: uvm_test_top.env_h.agent_h.mon_h [MON] Observed tx_d load = 0xa5
+# UVM_INFO spi_monitor.sv(90) @ 50160: uvm_test_top.env_h.agent_h.mon_h [MON] MON Transaction: rx_data=0xa5 tx_data=0xa5 cpol=0 cpha=1 clk_div=50
+# UVM_INFO spi_scoreboard.sv(32) @ 50160: uvm_test_top.env_h.sb_h [SCB] MATCH: tx_data=0xa5 == rx_data=0xa5
+# UVM_INFO spi_driver.sv(90) @ 51145: uvm_test_top.env_h.agent_h.drv_h [DRV] Captured rx_data = 0xa5 (expected tx_d loopback = 0xa5)
+# UVM_INFO spi_seq2.sv(23) @ 51645: uvm_test_top.env_h.agent_h.seqr_h@@seq2_h [SEQ2] This si Seq2--------------------------------------------------------------------------------------------------
+# Name                           Type               Size  Value                                   
+# ------------------------------------------------------------------------------------------------
+# item_h                         uvm_sequence_item  -     @953                                    
+#   tx_data                      integral           8     'h5a                                    
+#   rx_data                      integral           8     'h0                                     
+#   ss_n                         integral           1     'h0                                     
+#   cpol                         integral           1     'h0                                     
+#   cpha                         integral           1     'h0                                     
+#   lsb_first                    integral           1     'h0                                     
+#   clk_div                      integral           32    'h1a                                    
+#   num_bits                     integral           32    'h8                                     
+#   begin_time                   time               64    51645                                   
+#   depth                        int                32    'd2                                     
+#   parent sequence (name)       string             6     seq2_h                                  
+#   parent sequence (full name)  string             40    uvm_test_top.env_h.agent_h.seqr_h.seq2_h
+#   sequencer                    string             33    uvm_test_top.env_h.agent_h.seqr_h       
+# ------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO spi_monitor.sv(56) @ 51650: uvm_test_top.env_h.agent_h.mon_h [MON] Observed tx_d load = 0x5a
+# UVM_INFO spi_driver.sv(60) @ 51925: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=7) = 0
+# UVM_INFO spi_driver.sv(60) @ 52445: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=6) = 1
+# UVM_INFO spi_driver.sv(60) @ 52965: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=5) = 0
+# UVM_INFO spi_driver.sv(60) @ 53485: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=4) = 1
+# UVM_INFO spi_driver.sv(60) @ 54005: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=3) = 1
+# UVM_INFO spi_driver.sv(60) @ 54525: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=2) = 0
+# UVM_INFO spi_driver.sv(60) @ 55045: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=1) = 1
+# UVM_INFO spi_driver.sv(60) @ 55565: uvm_test_top.env_h.agent_h.drv_h [DRV] DRV MOSI(bit_idx=0) = 0
+# UVM_INFO spi_monitor.sv(90) @ 55850: uvm_test_top.env_h.agent_h.mon_h [MON] MON Transaction: rx_data=0x5a tx_data=0x5a cpol=0 cpha=0 clk_div=26
+# UVM_INFO spi_scoreboard.sv(32) @ 55850: uvm_test_top.env_h.sb_h [SCB] MATCH: tx_data=0x5a == rx_data=0x5a
+# UVM_INFO spi_driver.sv(90) @ 56095: uvm_test_top.env_h.agent_h.drv_h [DRV] Captured rx_data = 0x5a (expected tx_d loopback = 0x5a)
+# UVM_INFO spi_seq2.sv(23) @ 56355: uvm_test_top.env_h.agent_h.seqr_h@@seq2_h [SEQ2] This si Seq2--------------------------------------------------------------------------------------------------
+# Name                           Type               Size  Value                                   
+# ------------------------------------------------------------------------------------------------
+# item_h                         uvm_sequence_item  -     @987                                    
+#   tx_data                      integral           8     'h5a                                    
+#   rx_data                      integral           8     'h0                                     
+#   ss_n                         integral           1     'h0                                     
+#   cpol                         integral           1     'h0                                     
+#   cpha                         integral           1     'h1                                     
+#   lsb_first                    integral           1     'h0                                     
+#   clk_div                      integral           32    'h1d                                    
+#   num_bits                     integral           32    'h8                                     
+#   begin_time                   time               64    56355                                   
+#   depth                        int                32    'd2                                     
+#   parent sequence (name)       string             6     seq2_h                                  
+#   parent sequence (full name)  string             40    uvm_test_top.env_h.agent_h.seqr_h.seq2_h
+#   sequencer                    string             33    uvm_test_top.env_h.agent_h.seqr_h       
+# ------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO spi_monitor.sv(56) @ 56360: uvm_test_top.env_h.agent_h.mon_h [MON] Observed tx_d load = 0x5a
+# UVM_INFO spi_monitor.sv(90) @ 60750: uvm_test_top.env_h.agent_h.mon_h [MON] MON Transaction: rx_data=0x5a tx_data=0x5a cpol=0 cpha=1 clk_div=29
+# UVM_INFO spi_scoreboard.sv(32) @ 60750: uvm_test_top.env_h.sb_h [SCB] MATCH: tx_data=0x5a == rx_data=0x5a
+# UVM_INFO spi_driver.sv(90) @ 61315: uvm_test_top.env_h.agent_h.drv_h [DRV] Captured rx_data = 0x5a (expected tx_d loopback = 0x5a)
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.2/src/base/uvm_objection.svh(1270) @ 61605: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO spi_coverage.sv(75) @ 61605: uvm_test_top.env_h.cov_h [COV] Overall functional coverage = 100.00%
+# UVM_INFO spi_scoreboard.sv(45) @ 61605: uvm_test_top.env_h.sb_h [SCB] SCOREBOARD SUMMARY: Matched=13, Mismatched=0
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.2/src/base/uvm_report_server.svh(847) @ 61605: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  126
+# UVM_WARNING :    0
+# UVM_ERROR :    1
+# UVM_FATAL :    0
+# ** Report counts by id
+# [ASSERT]     1
+# [COV]     1
+# [DRV]    69
+# [MON]    26
+# [RNTST]     1
+# [SCB]    14
+# [SEQ1]     5
+# [SEQ2]     8
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# 
+# ** Note: $finish    : C:/questasim64_10.7c/verilog_src/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 61605 ns  Iteration: 76  Instance: /spi_top
