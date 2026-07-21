@@ -37,7 +37,7 @@ initial begin
    //gc=new();
    //gc=ggc;
    if ($cast(gc,ggc)) /* -here $cast(target,source)is dynamic casting.
-                         - here child assigned to parent i.e parent can acts as child with any handle                           or object type is possible but not parent assigned to child whereas child                            acting like a parent is impossible  */
+                         - here child assigned to parent i.e parent can acts as child with any handle or object type is possible but not parent assigned to child whereas child acting like a parent is impossible  */
       $display("Pass");
    else
       $display("Fail");
