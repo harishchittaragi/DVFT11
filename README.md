@@ -22,6 +22,7 @@ This work is part of the **Design Verification Fundamentals Training (DVFT11)** 
 
 - **Synopsys VCS** – Simulation
 - **Synopsys Verdi** – Waveform Debugging
+- **Questa Sim-64 10.7c** – Simulation, Assertions, Coverage & Waveform Debugging
 - **Linux Environment** – Execution Platform
 - **Git & GitHub** – Version Control
 
@@ -37,6 +38,7 @@ DVFT11/
 ├── APB_PROJECT_UVM/
 ├── APB_PROJECT_SV/
 ├── AXI4_LITE_PROJECT_UVM/
+├── SPI_UVM/
 ├── verilog_prog/
 └── README.md
 ```
@@ -184,7 +186,7 @@ A complete UVM verification environment for the APB Protocol with factory regist
 - ✅ All 4 test scenarios verified — Write, Read, Read-Write, Error
 
 ---
-## ⭐ AXI4-Lite Protocol Verification (Latest)
+## ⭐ AXI4-Lite Protocol Verification
 
 A complete, industry-standard **UVM verification environment** for the **AXI4-Lite Protocol** (ARM AMBA), built as part of Design Verification training at ChipEdge Private Limited.
 
@@ -238,6 +240,68 @@ A complete, industry-standard **UVM verification environment** for the **AXI4-Li
 
 ---
 
+## ⭐ SPI Protocol Verification (Latest)
+
+A complete **UVM verification environment** for the **SPI (Serial Peripheral Interface) Protocol**, built and simulated using **Questa Sim-64 10.7c**.
+
+### 🔶 SPI_UVM Testbench Architecture
+
+| File | UVM Component | Description |
+|------|---------------|-------------|
+| `spi_interface.sv` | Interface | SPI signal bundle — `sclk`, `mosi`, `miso`, `ss_n`, driver/monitor clocking blocks |
+| `spi_seq_item.sv` | `uvm_sequence_item` | SPI transaction data item — mode (CPOL/CPHA), bit order, tx/rx data |
+| `spi_sequencer.sv` | `uvm_sequencer` | Routes sequences to the driver |
+| `spi_driver.sv` | `uvm_driver` | Drives SPI master signals to the DUT via virtual interface |
+| `spi_monitor.sv` | `uvm_monitor` | Samples and reconstructs SPI transactions from the bus |
+| `spi_agent.sv` | `uvm_agent` | Contains Driver + Sequencer + Monitor |
+| `spi_scoreboard.sv` | `uvm_scoreboard` | Compares transmitted vs received data for match/mismatch checking |
+| `spi_coverage.sv` | `uvm_subscriber` | Functional coverage collector with covergroups |
+| `spi_env.sv` | `uvm_env` | Top-level UVM environment with agent, scoreboard, coverage |
+| `spi_test.sv` | `uvm_test` | Base test class extended by individual test scenarios |
+| `spi_top.sv` | Top Module | Testbench top with `run_test()` and interface binding |
+| `run.do` | Simulation Script | Questa Sim `.do` script for compile, simulate, and coverage flow |
+
+### Sequences
+
+| File | Description |
+|------|-------------|
+| `spi_seq1.sv` | Directed/basic SPI transfer sequence |
+| `spi_seq2.sv` | Randomized SPI transfer sequence across CPOL/CPHA modes |
+
+### Coverage Model
+
+| Coverpoint / Cross | Description |
+|---------------------|-------------|
+| `cp_cpha` | Clock phase mode coverage (mode0 / mode1) |
+| `cp_cpol` | Clock polarity coverage |
+| `cp_lsb_first` | Bit order coverage (LSB-first / MSB-first) |
+| `cp_tx_data` | Transmit data value coverage — all-zero, all-ones, alternating patterns |
+| `cp_clk_div` | Clock divider ratio coverage — low/mid/high divisor |
+| `cp_match` | Scoreboard match coverage |
+| `cx_mode_data` | Cross coverage of SPI mode against transmitted data patterns |
+
+### SystemVerilog Assertions (SVA)
+
+| Assertion | Description |
+|-----------|-------------|
+| `a_miso_tristate` | MISO line tri-states correctly when slave is deselected |
+| `a_sclk_stable` | SCLK remains stable between active edges |
+| `a_rxdv_pulse` | Receive data-valid pulse asserted for exactly one cycle |
+| `a_rxdv_needs_txn` | Data-valid pulse only follows a completed transaction |
+| `a_tx_en_pulse` | Transmit-enable pulse asserted for exactly one cycle |
+| `a_reset_idle` | SS_n returns to idle state after reset |
+| `a_mosi_known` | MOSI line driven to a known (non-X) value when active |
+
+### Results
+
+- ✅ Functional coverage: **100%** across all coverpoints and cross coverage (`cp_cpha`, `cp_cpol`, `cp_lsb_first`, `cp_tx_data`, `cp_clk_div`, `cp_match`, `cx_mode_data`)
+- ✅ SPI master-slave transactions verified across multiple CPOL/CPHA modes with randomized data
+- ✅ SVA protocol checks monitored continuously via Questa Sim Assertions window (tristate behavior, clock stability, control pulse timing, reset behavior, known-value checks)
+- ✅ Waveforms and assertion/coverage reports captured in `SPI_UVM/RESULTS/` (`WAVE_*.png`, `COVERAGE.png`, `ASSERTION_COV.png`, `debug.log`)
+- 🛠 Simulated and debugged using **Questa Sim-64 10.7c** (Transcript, Wave, Assertions, and Covergroups windows)
+
+---
+
 ## 🎯 Key Concepts Covered
 
 - RTL Design Verification
@@ -252,6 +316,7 @@ A complete, industry-standard **UVM verification environment** for the **AXI4-Li
 - Python Scripting for Verification Automation
 - Regression Testing & Automation
 - AXI4-Lite Protocol — 5-channel AMBA verification
+- SPI Protocol — Multi-mode (CPOL/CPHA) serial verification using Questa Sim
 ---
 
 ## 👨‍💻 Author
