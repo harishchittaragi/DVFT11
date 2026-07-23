@@ -34,7 +34,9 @@ DVFT11/
 ├── System_Verilog/
 ├── UVM_CODES/
 ├── PYTHON/
-├── APB_PROJECT_UVM/  (APB_PROJECT_SV + APB_PROJECT_UVM)
+├── APB_PROJECT_UVM/
+├── APB_PROJECT_SV/
+├── AXI4_LITE_PROJECT_UVM/
 ├── verilog_prog/
 └── README.md
 ```
@@ -182,6 +184,59 @@ A complete UVM verification environment for the APB Protocol with factory regist
 - ✅ All 4 test scenarios verified — Write, Read, Read-Write, Error
 
 ---
+## ⭐ AXI4-Lite Protocol Verification (Latest)
+
+A complete, industry-standard **UVM verification environment** for the **AXI4-Lite Protocol** (ARM AMBA), built as part of Design Verification training at ChipEdge Private Limited.
+
+> ⚠️ Note: The DUT (Design Under Test) is an industry-standard confidential design provided by ChipEdge Private Limited and is not included in this repository.
+
+### 🔶 AXI4-Lite UVM Testbench Architecture
+
+| File | UVM Component | Description |
+|------|---------------|-------------|
+| `axi4_lite_interface.sv` | Interface | AXI4-Lite signal bundle — all 5 channels |
+| `axi4_lite_seq_item.sv` | `uvm_sequence_item` | AXI4-Lite transaction data item |
+| `axi4_lite_sequencer.sv` | `uvm_sequencer` | Routes sequences to the driver |
+| `axi4_lite_driver.sv` | `uvm_driver` | Drives all AXI4-Lite channel signals to DUT |
+| `axi4_lite_act_monitor.sv` | `uvm_monitor` | Observes and captures DUT transactions |
+| `axi4_lite_active_agent.sv` | `uvm_agent` | Contains Driver + Sequencer + Monitor |
+| `axi4_lite_coverage.sv` | `uvm_subscriber` | Functional coverage collector |
+| `axi4_lite_sb.sv` | `uvm_scoreboard` | Write/Read/Cross check with MATCH verification |
+| `axi4_lite_env.sv` | `uvm_env` | Top-level UVM environment |
+| `axi4_lite_test.sv` | `uvm_test` | Base test class |
+| `axi4_lite_top.sv` | Top Module | Testbench top with run_test() and interface binding |
+| `Makefile` | Regression | Automated regression execution |
+
+### Sequences
+
+| File | Description |
+|------|-------------|
+| `write_seq.sv` | Write Address + Write Data + Write Response channel sequence |
+| `read_seq.sv` | Read Address + Read Data channel sequence |
+| `wr_rd_seq.sv` | Combined Write followed by Read sequence |
+| `slverr_seq.sv` | Slave error response sequence for error condition verification |
+
+### Channels Verified
+
+| Channel | Signals | Status |
+|---------|---------|--------|
+| Write Address (AW) | awaddr, awvalid, awready | ✅ Verified |
+| Write Data (W) | wdata, wstrb, wvalid, wready | ✅ Verified |
+| Write Response (B) | bresp, bvalid, bready | ✅ Verified |
+| Read Address (AR) | araddr, arvalid, arready | ✅ Verified |
+| Read Data (R) | rdata, rresp, rvalid, rready | ✅ Verified |
+
+### Results
+
+- ✅ 100% Functional Coverage achieved across all AXI4-Lite channels
+- ✅ All SVA assertions passing — 573 attempts, 0 failures
+- ✅ Scoreboard: WRITE PASS = 30, READ PASS = 30, CROSS CHECK MATCH verified
+- ✅ UVM_FATAL = 0, UVM_ERROR = 0 (functional), UVM_WARNING = 0
+- ✅ All 4 test sequences verified — Write, Read, Write-Read, Slave Error
+- ✅ VCS Coverage Metrics monitored — line, cond, FSM, branch, tgl
+- ✅ Simulation completed: Thu Jun 4 15:15:25 2026
+
+---
 
 ## 🎯 Key Concepts Covered
 
@@ -196,7 +251,7 @@ A complete UVM verification environment for the APB Protocol with factory regist
 - Virtual Sequences and Virtual Sequencers
 - Python Scripting for Verification Automation
 - Regression Testing & Automation
-
+- AXI4-Lite Protocol — 5-channel AMBA verification
 ---
 
 ## 👨‍💻 Author
